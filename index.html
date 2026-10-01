@@ -1,727 +1,844 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="nunito_9f6871af-module__PQaO8a__variable">
-    <head>
-        <meta charSet="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="preload" href="/_next/static/immutable/media/07454f8ad8aaac57-s.p.1d8-5gtibtj96.woff2" as="font" crossorigin="" type="font/woff2"/>
-        <link rel="preload" as="image" href="/wordmark.png"/>
-        <link rel="stylesheet" href="/_next/static/immutable/chunks/2s5bx2i-aavrd.css" data-precedence="next"/>
-        <link rel="preload" as="script" fetchPriority="low" href="/_next/static/immutable/chunks/1kbt14nefgsiq.js"/>
-        <script src="/_next/static/immutable/chunks/0jo3lv8klof30.js" async=""></script>
-        <script src="/_next/static/immutable/chunks/01s4-qb-q7o6z.js" async=""></script>
-        <script src="/_next/static/immutable/chunks/turbopack-03hig4mi9qfjh.js" async=""></script>
-        <script src="/_next/static/immutable/chunks/2corl6wyj4669.js" async=""></script>
-        <script src="/_next/static/immutable/chunks/2420qmnopx7wy.js" async=""></script>
-        <title>Simulador de funil VSL · Plugu</title>
-        <meta name="description" content="Simule o funil VSL, veja o ROAS contra o portão e qual alavanca mexer primeiro."/>
-        <meta name="next-size-adjust" content=""/>
-        <script src="/_next/static/immutable/chunks/0c0hxoamwjsbw.js" noModule=""></script>
-    </head>
-    <body>
-        <div hidden=""><!--$--><!--/$--></div>
-        <div class="mini" aria-hidden="true">
-            <span class="mini-roas num">
-                1,40<small> / <!-- -->1,6</small>
-            </span>
-            <span class="chip warn">Abaixo do portão</span>
-            <span class="mini-next">CTR 1,40% baixo → criativos.</span>
-            <span class="mini-kpi num">71<!-- --> vendas · CPA <!-- -->R$ 283</span>
-        </div>
-        <header class="top">
-            <img src="/wordmark.png" alt="Plugu" class="logo"/>
-            <h1>Simulador de funil VSL</h1>
-            <div class="top-ctl">
-                <label class="pill">
-                    <span>Começar de</span>
-                    <select>
-                        <option value="">Em branco</option>
-                        <option value="A">Caso <!-- -->A<!-- --> · <!-- -->Emagrecimento</option>
-                        <option value="B" selected="">Caso <!-- -->B<!-- --> · <!-- -->Renda extra</option>
-                        <option value="C">Caso <!-- -->C<!-- --> · <!-- -->Relacionamento</option>
-                        <option value="D">Caso <!-- -->D<!-- --> · <!-- -->Estética</option>
-                        <option value="E">Caso <!-- -->E<!-- --> · <!-- -->Finanças</option>
-                        <option value="F">Caso <!-- -->F<!-- --> · <!-- -->Renda extra</option>
-                        <option value="G">Caso <!-- -->G<!-- --> · <!-- -->Relacionamento</option>
-                        <option value="H">Caso <!-- -->H<!-- --> · <!-- -->Estética</option>
-                        <option value="I">Caso <!-- -->I<!-- --> · <!-- -->Finanças</option>
-                        <option value="J">Caso <!-- -->J<!-- --> · <!-- -->Emagrecimento</option>
-                    </select>
-                </label>
-                <label class="pill">
-                    <span>Nicho</span>
-                    <input type="text" placeholder="ex.: emagrecimento" class="wide" value="Renda extra"/>
-                </label>
-                <label class="pill">
-                    <span>Tamanho</span>
-                    <select>
-                        <option value="macro" selected="">Macro</option>
-                        <option value="medio">Médio</option>
-                        <option value="micro">Micro</option>
-                    </select>
-                </label>
-                <label class="pill">
-                    <span>Portão ROAS</span>
-                    <input class="numin num" type="text" inputMode="decimal" autoComplete="off" aria-label="Portão ROAS" value="1,6"/>
-                </label>
-                <button class="btn" title="Guarda os valores atuais para comparar as mudanças">Fixar como base</button>
-                <button class="btn ghost" disabled="">Voltar à base</button>
-            </div>
-        </header>
-        <section class="dest" aria-labelledby="dest-h">
-            <div class="dest-roas">
-                <span class="big num">1,40</span>
-                <span class="of num">/ <!-- -->1,6</span>
-                <span class="sub num">ROAS · real <!-- -->1,05</span>
-            </div>
-            <div class="dest-msg" aria-live="polite">
-                <div class="chips">
-                    <span class="chip warn">Abaixo do portão · faltam <!-- -->13,9<!-- -->%</span>
-                </div>
-                <p class="where">Trecho em obras · <!-- -->Impressões → Cliques</p>
-                <h2 id="dest-h">
-                    <button class="linklike">CTR 1,40% baixo → criativos.</button>
-                </h2>
-                <p>Novos hooks; ~2% costuma ser alcançável. CPC hoje R$ 3,21, acima do máximo que o funil paga (R$ 2,82).</p>
-                <p class="rule">regra do caso B · esforço médio</p>
-            </div>
-            <dl class="kpis num">
-                <div>
-                    <dt>Vendas front</dt>
-                    <dd>71</dd>
-                </div>
-                <div>
-                    <dt>CPA</dt>
-                    <dd>R$ 283</dd>
-                    <span class="delta">c/ imposto <!-- -->R$ 322</span>
-                </div>
-                <div>
-                    <dt>Lucro real</dt>
-                    <dd class="pos">R$ 1.120</dd>
-                    <span class="delta">fat. <!-- -->R$ 28.094</span>
-                </div>
-                <div>
-                    <dt>Ticket médio</dt>
-                    <dd>R$ 398</dd>
-                    <span class="delta">1,34<!-- -->× o front</span>
-                </div>
-            </dl>
-        </section>
-        <nav class="line" aria-label="Funil: clique num trecho para ir às alavancas dele">
-            <div class="seg s1 work focus" style="--w:22.77859397088021px">
-                <span class="stn first">
-                    <span class="lbl">
-                        <span class="nm">Impressões</span>
-                        <b class="num">444.444</b>
-                    </span>
-                    <span class="dot" aria-hidden="true"></span>
-                </span>
-                <button class="hit" aria-label="Impressões para Cliques: CTR 1,40%, fora da faixa. Ir às alavancas.">
-                    <span class="bar"></span>
-                    <span class="rate">CTR 1,40%</span>
-                </button>
-            </div>
-            <div class="seg s2" style="--w:22.619047496188784px">
-                <span class="stn">
-                    <span class="lbl">
-                        <span class="nm">Cliques</span>
-                        <b class="num">6.222</b>
-                    </span>
-                    <span class="dot" aria-hidden="true"></span>
-                </span>
-                <button class="hit" aria-label="Cliques para Visitas: connect 91%. Ir às alavancas.">
-                    <span class="bar"></span>
-                    <span class="rate">connect 91%</span>
-                </button>
-            </div>
-            <div class="seg s3" style="--w:21.512792476427574px">
-                <span class="stn">
-                    <span class="lbl">
-                        <span class="nm">Visitas</span>
-                        <b class="num">5.662</b>
-                    </span>
-                    <span class="dot" aria-hidden="true"></span>
-                </span>
-                <button class="hit" aria-label="Visitas para Plays: play rate 52%. Ir às alavancas.">
-                    <span class="bar"></span>
-                    <span class="rate">play rate 52%</span>
-                </button>
-            </div>
-            <div class="seg s4" style="--w:15.203213104109018px">
-                <span class="stn">
-                    <span class="lbl">
-                        <span class="nm">Plays</span>
-                        <b class="num">2.944</b>
-                    </span>
-                    <span class="dot" aria-hidden="true"></span>
-                </span>
-                <button class="hit" aria-label="Plays para Vendas: conversão 2,40%. Ir às alavancas.">
-                    <span class="bar"></span>
-                    <span class="rate">conversão 2,40%</span>
-                </button>
-            </div>
-            <div class="seg s5" style="--w:15.203213104109018px">
-                <span class="stn">
-                    <span class="lbl">
-                        <span class="nm">Vendas</span>
-                        <b class="num">71</b>
-                    </span>
-                    <span class="dot" aria-hidden="true"></span>
-                </span>
-                <span class="stn end">
-                    <span class="lbl">
-                        <span class="nm">Ticket</span>
-                        <b class="num">R$ 398</b>
-                    </span>
-                    <span class="dot" aria-hidden="true"></span>
-                </span>
-                <button class="hit" aria-label="Vendas para Ticket: upsells 15,5% · 5,6%. Ir às alavancas.">
-                    <span class="bar"></span>
-                    <span class="rate">upsells 15,5% · 5,6%</span>
-                </button>
-            </div>
-        </nav>
-        <section class="cols" aria-label="Alavancas por etapa">
-            <div id="col-trafego" class="col s1 flag">
-                <div class="col-head">
-                    <h3>Tráfego</h3>
-                    <span class="col-meta num">6.222 cliques · CTR 1,40%</span>
-                    <p class="src">Gerenciador · CPC é o resultado, CPM e CTR são as causas</p>
-                    <span class="band ruim">em obras</span>
-                </div>
-                <div class="col-body">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="invest">Investimento</label>
-                            <span class="fbox">
-                                <span class="unit">R$</span>
-                                <input id="invest" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="20.000"/>
-                            </span>
-                        </div>
-                        <div class="field">
-                            <label for="tax">Imposto sobre mídia</label>
-                            <span class="fbox">
-                                <input id="tax" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="13,8"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-cpm">CPM</label>
-                            <span class="lv-val">
-                                <span class="unit">R$</span>
-                                <input id="n-cpm" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="45"/>
-                            </span>
-                        </div>
-                        <small class="lv-sub">R$ por mil impressões</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--good) 0 26.31578947368421%, var(--ok) 26.31578947368421% 42.10526315789473%, var(--bad) 42.10526315789473% 100%)" aria-hidden="true"></span>
-                            <span class="mk need" style="left:15.530014696842102%" aria-hidden="true"></span>
-                            <input type="range" min="10" max="200" step="1" aria-label="CPM" aria-valuetext="R$ 45,00, bom" value="45"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">bom</span>
-                            <span class="need-t">
-                                precisa <b class="num">R$ 39,51</b>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="lever is-bad">
-                        <div class="lv-top">
-                            <label for="n-ctr">CTR de link</label>
-                            <span class="lv-val">
-                                <input id="n-ctr" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="1,40"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">cliques no link ÷ impressões</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 26.31578947368421%, var(--ok) 26.31578947368421% 36.84210526315789%, var(--good) 36.84210526315789% 100%)" aria-hidden="true"></span>
-                            <span class="mk need" style="left:22.71321025983406%" aria-hidden="true"></span>
-                            <input type="range" min="0.3" max="6" step="0.05" aria-label="CTR de link" aria-valuetext="1,40%, baixo" value="1.4"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band ruim">baixo</span>
-                            <span class="need-t">
-                                precisa <b class="num">1,59%</b>
-                            </span>
-                        </div>
-                    </div>
-                    <dl class="readouts num">
-                        <div>
-                            <dt>CPC calculado</dt>
-                            <dd>R$ 3,21</dd>
-                        </div>
-                        <div>
-                            <dt>CPC máximo p/ 1,6</dt>
-                            <dd>R$ 2,82</dd>
-                        </div>
-                        <div>
-                            <dt>Impressões</dt>
-                            <dd>444.444</dd>
-                        </div>
-                        <div>
-                            <dt>Cliques</dt>
-                            <dd>6.222</dd>
-                        </div>
-                    </dl>
-                    <details class="confer">
-                        <summary>Conferir com dados reais </summary>
-                        <div class="fields">
-                            <div class="field">
-                                <label for="cpcInformado">CPC de link informado</label>
-                                <span class="fbox">
-                                    <span class="unit">R$</span>
-                                    <input id="cpcInformado" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
-                                </span>
-                            </div>
-                        </div>
-                        <ul class="checks">
-                            <li class="ok">
-                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                    <path d="M3.5 8.5l3 3 6-7"></path>
-                                </svg>
-                                <span>
-                                    <span class="sr">Ok: </span>
-                                    CPC calculado R$ 3,21. Informe o CPC de link do Gerenciador para conferir.
-                                </span>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-            </div>
-            <div id="col-pagina" class="col s2">
-                <div class="col-head">
-                    <h3>Página</h3>
-                    <span class="col-meta num">5.662 visitas · connect 91%</span>
-                    <p class="src">Gerenciador · visualizações da página ÷ cliques no link</p>
-                </div>
-                <div class="col-body">
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-connect">Connect rate</label>
-                            <span class="lv-val">
-                                <input id="n-connect" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="91"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">visualizações ÷ cliques</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 66.66666666666666%, var(--ok) 66.66666666666666% 83.33333333333334%, var(--good) 83.33333333333334% 100%)" aria-hidden="true"></span>
-                            <input type="range" min="40" max="100" step="1" aria-label="Connect rate" aria-valuetext="91%, ótimo" value="91"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">ótimo</span>
-                        </div>
-                    </div>
-                    <dl class="readouts num">
-                        <div>
-                            <dt>Visitas</dt>
-                            <dd>5.662</dd>
-                        </div>
-                        <div>
-                            <dt>Custo por visita</dt>
-                            <dd>R$ 3,53</dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-            <div id="col-video" class="col s3">
-                <div class="col-head">
-                    <h3>Vídeo</h3>
-                    <span class="col-meta num">2.944 plays · play rate 52%</span>
-                    <p class="src">Vturb · recalculado na base do Meta quando não bate</p>
-                </div>
-                <div class="col-body">
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-playRate">Play rate</label>
-                            <span class="lv-val">
-                                <input id="n-playRate" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="52"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">plays ÷ visitas</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 41.17647058823529%, var(--ok) 41.17647058823529% 52.94117647058824%, var(--good) 52.94117647058824% 100%)" aria-hidden="true"></span>
-                            <span class="mk need" style="left:63.79996236146904%" aria-hidden="true"></span>
-                            <input type="range" min="5" max="90" step="1" aria-label="Play rate" aria-valuetext="52%, bom" value="52"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">bom</span>
-                            <span class="need-t">
-                                precisa <b class="num">59%</b>
-                            </span>
-                        </div>
-                    </div>
-                    <dl class="readouts num">
-                        <div>
-                            <dt>Plays</dt>
-                            <dd>2.944</dd>
-                        </div>
-                        <div>
-                            <dt>Custo por play</dt>
-                            <dd>R$ 6,79</dd>
-                        </div>
-                    </dl>
-                    <details class="confer">
-                        <summary>Conferir com dados reais </summary>
-                        <div class="fields">
-                            <div class="field">
-                                <label for="vturbViews">Visualizações (Vturb)</label>
-                                <span class="fbox">
-                                    <input id="vturbViews" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
-                                </span>
-                            </div>
-                            <div class="field">
-                                <label for="vturbPlays">Plays (Vturb)</label>
-                                <span class="fbox">
-                                    <input id="vturbPlays" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
-                                </span>
-                            </div>
-                        </div>
-                        <ul class="checks">
-                            <li class="ok">
-                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                    <path d="M3.5 8.5l3 3 6-7"></path>
-                                </svg>
-                                <span>
-                                    <span class="sr">Ok: </span>
-                                    Sem números absolutos da Vturb; play rate e conversão informados são usados como estão.
-                                </span>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-            </div>
-            <div id="col-vsl" class="col s4">
-                <div class="col-head">
-                    <h3>VSL</h3>
-                    <span class="col-meta num">71 vendas · conversão 2,40%</span>
-                    <p class="src">Vturb · retenção é leitura, conversão entra na conta</p>
-                </div>
-                <div class="col-body">
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-conv">Conversão</label>
-                            <span class="lv-val">
-                                <input id="n-conv" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="2,40"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">vendas do front ÷ plays</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 19.871794871794872%, var(--ok) 19.871794871794872% 23.076923076923077%, var(--good) 23.076923076923077% 100%)" aria-hidden="true"></span>
-                            <span class="mk need" style="left:32.483215783381866%" aria-hidden="true"></span>
-                            <input type="range" min="0.2" max="8" step="0.05" aria-label="Conversão" aria-valuetext="2,40%, boa" value="2.4"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">boa</span>
-                            <span class="need-t">
-                                precisa <b class="num">2,73%</b>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-ret1">Retenção 1 min</label>
-                            <span class="lv-val">
-                                <input id="n-ret1" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="62"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">leitura, não entra na conta</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 50%, var(--ok) 50% 61.111111111111114%, var(--good) 61.111111111111114% 100%)" aria-hidden="true"></span>
-                            <input type="range" min="5" max="95" step="1" aria-label="Retenção 1 min" aria-valuetext="62%, boa" value="62"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">boa</span>
-                        </div>
-                    </div>
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-retPitch">Retenção até o pitch</label>
-                            <span class="lv-val">
-                                <input id="n-retPitch" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="31"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">leitura, não entra na conta</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 19.11764705882353%, var(--ok) 19.11764705882353% 41.17647058823529%, var(--good) 41.17647058823529% 100%)" aria-hidden="true"></span>
-                            <input type="range" min="2" max="70" step="1" aria-label="Retenção até o pitch" aria-valuetext="31%, boa" value="31"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">boa</span>
-                        </div>
-                    </div>
-                    <dl class="readouts num">
-                        <div>
-                            <dt>Conversão sobre o pitch</dt>
-                            <dd>
-                                7,7
-                                <!-- -->
-                                % <span class="band bom">boa</span>
-                            </dd>
-                        </div>
-                    </dl>
-                    <details class="confer">
-                        <summary>Conferir com dados reais </summary>
-                        <div class="fields">
-                            <div class="field">
-                                <label for="vendasReais">Vendas reais do front</label>
-                                <span class="fbox">
-                                    <input id="vendasReais" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
-                                </span>
-                            </div>
-                        </div>
-                        <ul class="checks"></ul>
-                    </details>
-                </div>
-            </div>
-            <div id="col-oferta" class="col s5">
-                <div class="col-head">
-                    <h3>Oferta</h3>
-                    <span class="col-meta num">ticket R$ 398 · 1,34× o front</span>
-                    <p class="src">Plataforma · upsell não custa tráfego</p>
-                </div>
-                <div class="col-body">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="front">Preço do front</label>
-                            <span class="fbox">
-                                <span class="unit">R$</span>
-                                <input id="front" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="297"/>
-                            </span>
-                        </div>
-                        <div class="field">
-                            <label for="priceU1">Upsell 1</label>
-                            <span class="fbox">
-                                <span class="unit">R$</span>
-                                <input id="priceU1" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="397"/>
-                            </span>
-                        </div>
-                        <div class="field">
-                            <label for="priceU2">Upsell 2</label>
-                            <span class="fbox">
-                                <span class="unit">R$</span>
-                                <input id="priceU2" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="697"/>
-                            </span>
-                        </div>
-                        <div class="field">
-                            <label for="refund">Reembolso</label>
-                            <span class="fbox">
-                                <input id="refund" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="15,0"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-upsell1">Taxa upsell 1</label>
-                            <span class="lv-val">
-                                <input id="n-upsell1" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="15,5"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">% dos compradores do front</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 16.666666666666664%, var(--ok) 16.666666666666664% 23.333333333333332%, var(--good) 23.333333333333332% 100%)" aria-hidden="true"></span>
-                            <span class="mk need" style="left:49.039403626056306%" aria-hidden="true"></span>
-                            <input type="range" min="0" max="60" step="0.5" aria-label="Taxa upsell 1" aria-valuetext="15,5%, bom" value="15.5"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">bom</span>
-                            <span class="need-t">
-                                precisa <b class="num">29,4%</b>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="lever">
-                        <div class="lv-top">
-                            <label for="n-upsell2">Taxa upsell 2</label>
-                            <span class="lv-val">
-                                <input id="n-upsell2" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="5,6"/>
-                                <span class="unit">%</span>
-                            </span>
-                        </div>
-                        <small class="lv-sub">% dos compradores do front</small>
-                        <div class="rng">
-                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 7.5%, var(--ok) 7.5% 11.25%, var(--good) 11.25% 100%)" aria-hidden="true"></span>
-                            <span class="mk need" style="left:33.826707115231756%" aria-hidden="true"></span>
-                            <input type="range" min="0" max="40" step="0.5" aria-label="Taxa upsell 2" aria-valuetext="5,6%, bom" value="5.6"/>
-                        </div>
-                        <div class="lv-foot">
-                            <span class="band bom">bom</span>
-                            <span class="need-t">
-                                precisa <b class="num">13,5%</b>
-                            </span>
-                        </div>
-                    </div>
-                    <dl class="readouts num">
-                        <div>
-                            <dt>Ticket médio</dt>
-                            <dd>
-                                R$ 398
-                                <!-- -->
-                                <span class="band bom">bom</span>
-                            </dd>
-                        </div>
-                        <div>
-                            <dt>Receita extra por venda</dt>
-                            <dd>R$ 101</dd>
-                        </div>
-                        <div>
-                            <dt>Vendas upsell 1 · 2</dt>
-                            <dd>11 · 4</dd>
-                        </div>
-                    </dl>
-                    <details class="confer">
-                        <summary>Conferir com dados reais </summary>
-                        <div class="fields">
-                            <div class="field">
-                                <label for="faturamentoReal">Faturamento real</label>
-                                <span class="fbox">
-                                    <span class="unit">R$</span>
-                                    <input id="faturamentoReal" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
-                                </span>
-                            </div>
-                        </div>
-                        <ul class="checks"></ul>
-                    </details>
-                </div>
-            </div>
-        </section>
-        <section class="bottom solo">
-            <div class="panel routes">
-                <h2>Rotas até o destino</h2>
-                <p class="hint">Cada alavanca sozinha, para ir de 1,40 a 1,6 (+13,9% em vendas ou ticket).</p>
-                <div class="tablewrap">
-                    <table class="num">
-                        <thead>
-                            <tr>
-                                <th>Alavanca</th>
-                                <th class="r">Hoje</th>
-                                <th class="r">Precisaria</th>
-                                <th>O que significa</th>
-                                <th>Viabilidade</th>
-                                <th>Esforço</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="">
-                                <td>
-                                    <button class="linklike">Play rate</button>
-                                </td>
-                                <td class="r" data-l="Hoje">52%</td>
-                                <td class="r" data-l="Precisaria">
-                                    <b>59,2%</b>
-                                </td>
-                                <td class="muted" data-l="O que significa">+7,2 pp</td>
-                                <td data-l="Viabilidade">
-                                    <span class="tag ok">dentro do teto</span>
-                                </td>
-                                <td class="muted" data-l="Esforço">fácil · página e capa</td>
-                            </tr>
-                            <tr class="">
-                                <td>
-                                    <button class="linklike">Upsell 1 (sozinho)</button>
-                                </td>
-                                <td class="r" data-l="Hoje">15,5%</td>
-                                <td class="r" data-l="Precisaria">
-                                    <b>29,4%</b>
-                                </td>
-                                <td class="muted" data-l="O que significa">ticket R$ 398 → R$ 453</td>
-                                <td data-l="Viabilidade">
-                                    <span class="tag ok">dentro do teto</span>
-                                </td>
-                                <td class="muted" data-l="Esforço">fácil · oferta, não custa tráfego</td>
-                            </tr>
-                            <tr class="">
-                                <td>
-                                    <button class="linklike">Upsell 2 (sozinho)</button>
-                                </td>
-                                <td class="r" data-l="Hoje">5,6%</td>
-                                <td class="r" data-l="Precisaria">
-                                    <b>13,5%</b>
-                                </td>
-                                <td class="muted" data-l="O que significa">ticket R$ 398 → R$ 453</td>
-                                <td data-l="Viabilidade">
-                                    <span class="tag ok">dentro do teto</span>
-                                </td>
-                                <td class="muted" data-l="Esforço">fácil · oferta, não custa tráfego</td>
-                            </tr>
-                            <tr class="">
-                                <td>
-                                    <button class="linklike">CTR de link</button>
-                                </td>
-                                <td class="r" data-l="Hoje">1,40%</td>
-                                <td class="r" data-l="Precisaria">
-                                    <b>1,59%</b>
-                                </td>
-                                <td class="muted" data-l="O que significa">+0,19 pp</td>
-                                <td data-l="Viabilidade">
-                                    <span class="tag ok">dentro do teto</span>
-                                </td>
-                                <td class="muted" data-l="Esforço">médio · criativos</td>
-                            </tr>
-                            <tr class="">
-                                <td>
-                                    <button class="linklike">Conversão do front</button>
-                                </td>
-                                <td class="r" data-l="Hoje">2,40%</td>
-                                <td class="r" data-l="Precisaria">
-                                    <b>2,73%</b>
-                                </td>
-                                <td class="muted" data-l="O que significa">+0,33 pp</td>
-                                <td data-l="Viabilidade">
-                                    <span class="tag ok">dentro do teto</span>
-                                </td>
-                                <td class="muted" data-l="Esforço">médio a difícil · VSL</td>
-                            </tr>
-                            <tr class="">
-                                <td>
-                                    <button class="linklike">CPM</button>
-                                </td>
-                                <td class="r" data-l="Hoje">R$ 45,00</td>
-                                <td class="r" data-l="Precisaria">
-                                    <b>R$ 39,51</b>
-                                </td>
-                                <td class="muted" data-l="O que significa">−R$ 5,49</td>
-                                <td data-l="Viabilidade">
-                                    <span class="tag ok">dentro do teto</span>
-                                </td>
-                                <td class="muted" data-l="Esforço">difícil · conta e segmentação</td>
-                            </tr>
-                            <tr class="dim">
-                                <td>
-                                    <button class="linklike">Connect rate</button>
-                                </td>
-                                <td class="r" data-l="Hoje">91%</td>
-                                <td class="r" data-l="Precisaria">
-                                    <b>103,7%</b>
-                                </td>
-                                <td class="muted" data-l="O que significa">+12,7 pp</td>
-                                <td data-l="Viabilidade">
-                                    <span class="tag imp">impossível sozinha</span>
-                                </td>
-                                <td class="muted" data-l="Esforço">fácil · técnico</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="hint small">Tetos propostos: CTR <!-- -->5<!-- -->%, connect <!-- -->97<!-- -->%, play rate <!-- -->75<!-- -->%, conversão <!-- -->6<!-- -->%, upsell 1 <!-- -->35<!-- -->%, upsell 2 <!-- -->15<!-- -->%, CPM mínimo R$ <!-- -->20<!-- -->.</p>
-            </div>
-        </section>
-        <!--$-->
-        <!--/$-->
-        <script src="/_next/static/immutable/chunks/1kbt14nefgsiq.js" id="_R_" async=""></script>
-        <script>
-            (self.__next_f = self.__next_f || []).push([0])
-        </script>
-        <script>
-            self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"default\"]\n3:I[37457,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"default\"]\n4:I[93663,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\",\"/_next/static/immutable/chunks/2420qmnopx7wy.js\"],\"default\"]\n5:I[97367,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"OutletBoundary\"]\n6:\"$Sreact.suspense\"\n8:I[97367,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"ViewportBoundary\"]\na:I[97367,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"MetadataBoundary\"]\nc:I[68027,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"default\",1]\n:HL[\"/_next/static/immutable/chunks/2s5bx2i-aavrd.css\",\"style\"]\n:HL[\"/_next/static/immutable/media/07454f8ad8aaac57-s.p.1d8-5gtibtj96.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n0:{\"P\":null,\"c\":[\"\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{},\"$undefined\",\"$undefined\",4608]},\"$undefined\",\"$undefined\",4624],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/immutable/chunks/2s5bx2i-aavrd.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/immutable/chunks/2corl6wyj4669.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"pt-BR\",\"className\":\"nunito_9f6871af-module__PQaO8a__variable\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L4\",null,{}],[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/immutable/chunks/2420qmnopx7wy.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$6\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@7\"}]}]]}],{},null,false,null]},null,false,null],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L8\",null,{\"children\":\"$L9\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$La\",null,{\"children\":[\"$\",\"$6\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Lb\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$c\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/immutable/chunks/2s5bx2i-aavrd.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]]],\"S\":true,\"h\":null,\"r\":\"$undefined\",\"s\":\"$undefined\",\"a\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"_RvxLtJi5NyJQxkZ0CGka\"}\n9:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n7:null\nb:[[\"$\",\"title\",\"0\",{\"children\":\"Simulador de funil VSL · Plugu\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Simule o funil VSL, veja o ROAS contra o portão e qual alavanca mexer primeiro.\"}]]\n"])
-        </script>
-    </body>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador de funil VSL · Plugu</title>
+<meta name="description" content="Simule o funil VSL, veja o ROAS contra o portão e qual alavanca mexer primeiro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f2f6; --card:#fff; --ink:#1f1630; --ink2:#3b3150; --muted:#7a7290; --line:#e6e3ee; --field:#f1eff5;
+  --dark:#1f1630; --dark-ink:#fff; --dark-muted:#cfc8de;
+  --good:#3dbb7c; --ok:#f2b544; --bad:#f0625f;
+  --good-t:#1f9a5c; --ok-t:#b67a06; --bad-t:#d92f3a;
+  --pink:#e8247c; --pos:#3fe0a2;
+  --s1:#ff5a5f; --s2:#f43f6e; --s3:#e0359b; --s4:#a63597; --s5:#6e2a8e;
+  --r:15px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Nunito,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:600;-webkit-font-smoothing:antialiased}
+.num{font-variant-numeric:tabular-nums}
+button,input,select{font:inherit;color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 18px 35px}
+
+/* topo */
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:9px 15px;padding:10px 0 15px}
+.logo{font-size:24px;font-weight:900;letter-spacing:-2px;line-height:1;background:linear-gradient(90deg,#ff3d7f,#e0359b 45%,#6e2a8e);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:3px}
+.top h1{font-size:13px;font-weight:800;margin:0;color:var(--ink2)}
+.top-ctl{flex-basis:100%;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;background:#fff;border:2px solid var(--line);border-radius:549px;padding:3px 3px 3px 11px;min-height:40px}
+.pill>span{color:var(--muted);font-size:10px;white-space:nowrap}
+.pill select,.pill input{border:0;background-color:var(--field);border-radius:549px;padding:7px 11px;font-size:13px;font-weight:800;outline:none}
+.pill select{appearance:none;-webkit-appearance:none;padding-right:34px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%231f1630' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;cursor:pointer}
+.pill input.wide{width:110px}
+.pill input.gate{width:53px;text-align:center}
+.pill select:focus,.pill input:focus{box-shadow:0 0 0 3px #e8247c44}
+.btn{border:0;border-radius:549px;background:var(--dark);color:#fff;font-size:13px;font-weight:800;padding:10px 14px;cursor:pointer}
+.btn.ghost{background:transparent;border:3px solid #cfcbd8;color:var(--ink2);padding:8px 13px}
+.btn:disabled{opacity:.45;cursor:default}
+
+/* destino */
+.dest{background:var(--dark);color:var(--dark-ink);border-radius:22px;padding:21px 29px 22px;display:grid;grid-template-columns:auto 1fr;gap:11px 35px}
+.dest-roas{display:flex;flex-wrap:wrap;white-space:nowrap;align-items:baseline;align-content:flex-start;padding-top:22px}
+.big{font-size:70px;font-weight:900;line-height:.9;letter-spacing:-2px}
+.of{font-size:22px;font-weight:800;color:var(--dark-muted);margin-left:6px}
+.dest-roas .sub{flex-basis:100%;color:var(--dark-muted);font-size:11px;font-weight:700;margin-top:14px}
+.vsb{flex-basis:100%;font-size:8px;font-weight:700;color:var(--dark-muted);margin-top:3px}
+.up{color:var(--pos)} .down{color:#ff8a8f}
+.chips{display:flex;gap:4px;flex-wrap:wrap}
+.chip{display:inline-block;border-radius:549px;padding:4px 12px;font-weight:800;font-size:12px}
+.chip.warn{background:var(--bad-t);color:#fff}
+.chip.good{background:var(--good-t);color:#fff}
+.where{color:#ff6b9a;font-weight:800;font-size:11px;margin:12px 0 3px}
+.dest h2{margin:0 0 3px;font-size:19px;font-weight:900;line-height:1.2}
+.linklike{border:0;background:none;padding:0;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.dest h2 .linklike:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.dest-msg p{margin:0;font-size:12px;line-height:1.55;color:#e4dff0;font-weight:500;max-width:561px}
+.dest-msg p.rule{color:#9f97b4;font-size:10px;font-weight:700;margin-top:6px}
+.kpis{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin:9px 0 0;padding-top:18px;border-top:1px solid #ffffff22}
+.kpis div{display:flex;flex-direction:column}
+.kpis dt{font-size:10px;color:var(--dark-muted);font-weight:700}
+.kpis dd{margin:4px 0;font-size:22px;font-weight:900}
+.kpis dd.pos{color:var(--pos)} .kpis dd.neg{color:#ff8a8f}
+.kpis .delta{color:var(--dark-muted);font-size:10px;font-weight:700}
+.kpis .vsb{margin-top:2px}
+.kpis .vsb.up{color:var(--pos)} .kpis .vsb.down{color:#ff8a8f}
+
+/* linha do funil */
+.linewrap{overflow-x:auto;margin:35px -9px 0;padding:0 9px}
+.line{display:flex;min-width:600px;padding:0 14px}
+.seg{position:relative;flex:1;height:132px}
+.stn{position:absolute;left:0;top:0;height:82px;width:0}
+.stn.end{left:100%}
+.lbl{position:absolute;top:0;left:0;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.stn.first .lbl{transform:translateX(-14px);text-align:left}
+.stn.end .lbl{transform:translateX(calc(-100% + 14px));text-align:right}
+.lbl .nm{display:block;color:var(--muted);font-size:11px;font-weight:700}
+.lbl b{font-size:19px;font-weight:900}
+.dot{position:absolute;top:53px;left:0;width:31px;height:31px;margin-left:-15px;border-radius:50%;background:#fff;border:6px solid var(--dark);z-index:2;pointer-events:none}
+.stn.end .dot{width:41px;height:41px;margin-left:-20px;top:48px;border-color:var(--s5)}
+.hit{position:absolute;inset:55px 0 0;border:0;background:none;padding:0;cursor:pointer}
+.bar{position:absolute;left:0;right:0;top:5px;height:16px;background:var(--c)}
+.seg.work .bar{background:repeating-linear-gradient(-45deg,var(--s1) 0 8px,#ffd4d6 8px 14px)}
+.s1{--c:var(--s1)} .s2{--c:var(--s2)} .s3{--c:var(--s3)} .s4{--c:var(--s4)} .s5{--c:var(--s5)}
+.seg.s5 .bar{height:13px;top:7px}
+.rate{position:absolute;top:42px;left:50%;transform:translateX(-50%);background:#fff;border:2px solid var(--line);border-radius:549px;padding:3px 10px;font-size:12px;font-weight:800;white-space:nowrap}
+.seg.bad .rate{background:var(--bad-t);border-color:var(--bad-t);color:#fff}
+.hit:hover .rate{border-color:var(--c)}
+.hit:focus-visible{outline:3px solid #e8247c66;border-radius:7px}
+
+/* colunas */
+.cols{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;align-items:start;margin-top:4px}
+.col{background:var(--card);border-radius:var(--r);padding:15px 18px 14px;border:3px solid transparent;scroll-margin-top:50px}
+.col.flag{border-color:var(--bad)}
+.col-head{padding-bottom:12px;border-bottom:3px solid var(--field);margin-bottom:12px}
+.col-head h3{margin:0;font-size:16px;font-weight:900}
+.col-meta{display:none;font-size:8px;color:var(--muted)}
+.src{color:var(--muted);font-size:10px;line-height:1.4;margin:4px 0 0;font-weight:600}
+.col-head .band{display:block;margin-top:6px;font-size:10px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:8px 9px;margin-bottom:12px}
+.field{display:flex;flex-direction:column;justify-content:space-between}
+.field label{display:block;font-size:10px;font-weight:700;color:var(--ink2);margin-bottom:4px;line-height:1.35}
+.fbox{display:flex;align-items:center;gap:3px;background:var(--field);border-radius:10px;padding:8px 10px}
+.fbox input{border:0;background:none;width:100%;min-width:0;font-size:13px;font-weight:800;text-align:right;outline:none}
+.fbox:focus-within{box-shadow:0 0 0 3px #e8247c44}
+.unit{color:var(--muted);font-weight:700;font-size:12px}
+.lever{padding:3px 0 12px;border-radius:7px}
+.lever+.lever{border-top:2px solid var(--field);padding-top:11px;border-radius:0}
+.lv-top{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.lv-top label{font-size:12px;font-weight:800;line-height:1.25}
+.lv-val{display:inline-flex;align-items:baseline;gap:2px}
+.lv-val input{border:0;background:none;font-size:19px;font-weight:900;text-align:right;width:3.4em;outline:none;padding:0;border-bottom:2px dashed transparent}
+.lv-val input:focus{border-bottom-color:var(--pink)}
+.lv-val .unit{font-size:11px}
+.lv-sub{display:block;color:var(--muted);font-size:10px;margin-top:2px}
+.rng{position:relative;height:22px;margin:9px 0 4px}
+.zones{position:absolute;left:0;right:0;top:8px;height:5px;border-radius:5px}
+.mk{position:absolute;top:2px;width:4px;height:15px;margin-left:-2px;background:var(--pink);border-radius:2px;z-index:1}
+.mk::before{content:"";position:absolute;top:-3px;left:-3px;border:4px solid transparent;border-top-color:var(--pink)}
+.rng input[type=range]{position:absolute;inset:0;width:100%;height:22px;margin:0;background:none;-webkit-appearance:none;appearance:none;cursor:pointer;z-index:2}
+.rng input[type=range]::-webkit-slider-runnable-track{height:22px;background:none}
+.rng input[type=range]::-moz-range-track{height:22px;background:none}
+.rng input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:21px;height:21px;margin-top:1px;border-radius:50%;background:#fff;border:5px solid var(--dark)}
+.rng input[type=range]::-moz-range-thumb{width:11px;height:11px;border-radius:50%;background:#fff;border:5px solid var(--dark)}
+.rng input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 5px #e8247c55}
+.lv-foot{display:flex;justify-content:space-between;align-items:baseline;gap:4px;font-size:10px}
+.band{font-weight:800}
+.band.bom{color:var(--good-t)} .band.ok{color:var(--ok-t)} .band.ruim{color:var(--bad-t)}
+.need-t{color:var(--muted)} .need-t b{color:var(--pink);font-weight:900}
+.readouts{display:grid;grid-template-columns:1fr 1fr;gap:8px 9px;margin:3px 0 0;padding:10px 0 0;border-top:2px solid var(--field)}
+.readouts dt{font-size:9px;color:var(--muted);font-weight:700}
+.readouts dd{margin:2px 0 0;font-size:12px;font-weight:900}
+.readouts dd .band{font-size:9px;margin-left:4px}
+.confer{margin-top:10px;border-top:2px solid var(--field);padding-top:8px}
+.confer summary{cursor:pointer;color:var(--muted);font-weight:800;font-size:9px}
+.confer .fields{margin:8px 0 4px}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.checks li{display:flex;gap:4px;font-size:9px;line-height:1.4;color:var(--ink2);font-weight:600}
+.checks svg{flex:none;width:10px;height:10px;margin-top:2px;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.checks li.ok svg{stroke:var(--good-t)} .checks li.warn svg{stroke:var(--ok-t)}
+.use{border:0;background:var(--field);border-radius:549px;padding:3px 7px;margin-left:3px;font-weight:800;font-size:8px;cursor:pointer}
+.use:hover{background:#e7e3ef}
+.lever.pulse{animation:pulse 1.2s ease}
+@keyframes pulse{0%,100%{background:transparent}30%{background:#e8247c14}}
+
+/* rotas */
+.bottom{margin-top:15px}
+.panel{background:var(--card);border-radius:var(--r);padding:18px 20px}
+.panel h2{margin:0;font-size:16px;font-weight:900}
+.hint{color:var(--muted);font-size:10px;margin:4px 0 10px}
+.hint.small{font-size:9px;margin:9px 0 0}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:10px}
+th{text-align:left;color:var(--muted);font-weight:700;font-size:9px;padding:6px 7px;border-bottom:2px solid var(--field)}
+td{padding:8px 7px;border-bottom:2px solid var(--field)}
+.r{text-align:right}
+td .linklike{font-weight:800;color:var(--ink)}
+td .linklike:hover{color:var(--pink)}
+.muted{color:var(--muted)}
+tr.dim td{opacity:.5}
+.tag{display:inline-block;border-radius:549px;padding:4px 7px;font-size:8px;font-weight:800;white-space:nowrap}
+.tag.ok{background:#3dbb7c22;color:var(--good-t)} .tag.imp{background:#f0625f22;color:var(--bad-t)}
+
+/* barra compacta */
+.mini{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--dark);color:#fff;padding:7px 18px;transform:translateY(-110%);transition:transform .25s ease;box-shadow:0 3px 11px #1f163033}
+.mini.show{transform:none}
+.mini-roas{font-size:15px;font-weight:900}
+.mini-roas small{font-size:9px;color:var(--dark-muted)}
+.mini .chip{font-size:8px;padding:5px 8px}
+.mini-next{font-weight:800;font-size:10px;flex:1;min-width:99px}
+.mini-kpi{color:var(--dark-muted);font-size:9px;font-weight:700}
+
+@media (max-width:1100px){
+  .cols{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .big{font-size:57px}
+}
+@media (max-width:820px){
+  .wrap{padding:0 9px 26px}
+  .cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dest{grid-template-columns:1fr;padding:16px 15px;border-radius:16px;gap:4px}
+  .dest-roas{padding-top:0;max-width:none}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .col-meta{display:block}
+  .mini{padding:6px 9px}
+}
+@media (max-width:560px){
+  .cols{grid-template-columns:1fr}
+  .top{gap:6px 9px}
+  .logo{font-size:20px}
+  .top h1{font-size:10px}
+  .pill{min-height:31px;padding-left:8px}
+  .pill>span{font-size:8px}
+  .pill select,.pill input{font-size:10px;padding:5px 8px}
+  .pill select{padding-right:30px;max-width:62vw}
+  .pill input.wide{width:82px}
+  .btn{font-size:10px;padding:8px 11px}
+  .btn.ghost{padding:6px 9px}
+  .big{font-size:46px}
+  .of{font-size:16px}
+  .dest h2{font-size:14px}
+  .dest-msg p{font-size:10px}
+  .kpis dd{font-size:16px}
+  .kpis dt,.kpis .delta{font-size:8px}
+  .chip{font-size:9px;padding:3px 9px}
+  .col{padding:12px 11px}
+  .panel{padding:13px 11px}
+  .mini-kpi{display:none}
+  table,thead,tbody,tr,td{display:block}
+  thead{display:none}
+  tr{border-bottom:2px solid var(--field);padding:6px 0}
+  td{border:0;padding:4px 0;display:flex;justify-content:space-between;gap:7px;text-align:right}
+  td[data-l]::before{content:attr(data-l);color:var(--muted);font-weight:700;text-align:left}
+  td:first-child{justify-content:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="mini" id="mini" aria-hidden="true">
+  <span class="mini-roas num" id="miniRoas"></span>
+  <span class="chip" id="miniChip"></span>
+  <span class="mini-next" id="miniNext"></span>
+  <span class="mini-kpi num" id="miniKpi"></span>
+</div>
+
+<div class="wrap">
+  <header class="top">
+    <span class="logo" aria-label="Plugu">plugu</span>
+    <h1>Simulador de funil VSL</h1>
+    <div class="top-ctl">
+      <label class="pill"><span>Começar de</span><select id="caseSel"></select></label>
+      <label class="pill"><span>Nicho</span><input id="nicho" type="text" class="wide" placeholder="ex.: emagrecimento" autocomplete="off"></label>
+      <label class="pill"><span>Tamanho</span>
+        <select id="size"><option value="macro">Macro</option><option value="medio">Médio</option><option value="micro">Micro</option></select>
+      </label>
+      <label class="pill"><span>Portão ROAS</span><input id="gate" class="gate num" type="text" inputmode="decimal" autocomplete="off" aria-label="Portão ROAS"></label>
+      <button class="btn" id="fixBase" title="Guarda os valores atuais para comparar as mudanças">Fixar como base</button>
+      <button class="btn ghost" id="backBase" disabled>Voltar à base</button>
+    </div>
+  </header>
+
+  <section class="dest" id="dest" aria-labelledby="dest-h">
+    <div class="dest-roas">
+      <span class="big num" id="roasBig"></span>
+      <span class="of num" id="roasOf"></span>
+      <span class="sub num" id="roasSub"></span>
+      <span class="vsb num" id="roasVs"></span>
+    </div>
+    <div class="dest-msg" aria-live="polite">
+      <div class="chips"><span class="chip" id="gateChip"></span></div>
+      <p class="where" id="where"></p>
+      <h2 id="dest-h"><button class="linklike" id="nextBtn"></button></h2>
+      <p id="nextTxt"></p>
+      <p class="rule" id="rule"></p>
+    </div>
+    <dl class="kpis num" id="kpis"></dl>
+  </section>
+
+  <div class="linewrap">
+    <nav class="line" id="line" aria-label="Funil: clique num trecho para ir às alavancas dele"></nav>
+  </div>
+
+  <section class="cols" id="cols" aria-label="Alavancas por etapa"></section>
+
+  <section class="bottom">
+    <div class="panel routes">
+      <h2>Rotas até o destino</h2>
+      <p class="hint" id="routesHint"></p>
+      <div class="tablewrap" id="routesWrap">
+        <table class="num">
+          <thead><tr><th>Alavanca</th><th class="r">Hoje</th><th class="r">Precisaria</th><th>O que significa</th><th>Viabilidade</th><th>Esforço</th></tr></thead>
+          <tbody id="routes"></tbody>
+        </table>
+      </div>
+      <p class="hint small" id="capsHint"></p>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- números pt-BR ---------- */
+  function parseNum(v) {
+    var s = String(v == null ? "" : v).replace(/R\$|%|\s/g, "");
+    if (!s) return NaN;
+    if (s.indexOf(",") >= 0) s = s.replace(/\./g, "").replace(",", ".");
+    else if (/^\d{1,3}(\.\d{3})+$/.test(s)) s = s.replace(/\./g, "");
+    return parseFloat(s);
+  }
+  function fmt(n, d, trim) {
+    if (!isFinite(n)) return "—";
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: trim ? 0 : d, maximumFractionDigits: d });
+  }
+  function int(n) { return fmt(Math.round(n), 0); }
+  function money(n, d) { return isFinite(n) ? (n < 0 ? "−R$ " : "R$ ") + fmt(Math.abs(n), d || 0) : "—"; }
+  function pct(n, d) { return fmt(n, d) + "%"; }
+  function signed(d, f) { return (d > 0 ? "+" : "−") + f(Math.abs(d)); }
+
+  /* ---------- casos ----------
+     O caso B reproduz os números da página original; os demais são pontos de partida de exemplo. */
+  var BLANK = { invest: 10000, tax: 13.8, cpm: 40, ctr: 1.5, connect: 85, playRate: 50, conv: 2, ret1: 55, retPitch: 25,
+    front: 197, priceU1: 297, priceU2: 497, refund: 10, upsell1: 15, upsell2: 5, gate: 1.5, size: "macro" };
+  var CASES = {
+    A: { niche: "Emagrecimento", invest: 30000, cpm: 38, ctr: 1.9, connect: 84, playRate: 47, conv: 1.6, ret1: 58, retPitch: 22, front: 197, priceU1: 297, priceU2: 497, refund: 12, upsell1: 18, upsell2: 6, gate: 1.5, size: "macro" },
+    B: { niche: "Renda extra", invest: 20000, tax: 13.8, cpm: 45, ctr: 1.4, connect: 91, playRate: 52, conv: 2.4, ret1: 62, retPitch: 31, front: 297, priceU1: 397, priceU2: 697, refund: 15, upsell1: 15.5, upsell2: 5.6, gate: 1.6, size: "macro" },
+    C: { niche: "Relacionamento", invest: 8000, cpm: 28, ctr: 2.2, connect: 78, playRate: 55, conv: 1.9, ret1: 60, retPitch: 28, front: 147, priceU1: 197, priceU2: 297, refund: 9, upsell1: 21, upsell2: 8, gate: 1.4, size: "medio" },
+    D: { niche: "Estética", invest: 5000, cpm: 52, ctr: 1.7, connect: 88, playRate: 36, conv: 2.6, ret1: 49, retPitch: 24, front: 197, priceU1: 297, priceU2: 397, refund: 8, upsell1: 12, upsell2: 4, gate: 1.5, size: "micro" },
+    E: { niche: "Finanças", invest: 40000, cpm: 62, ctr: 1.2, connect: 92, playRate: 58, conv: 2.9, ret1: 66, retPitch: 34, front: 497, priceU1: 697, priceU2: 997, refund: 11, upsell1: 13, upsell2: 4.5, gate: 1.6, size: "macro" },
+    F: { niche: "Renda extra", invest: 12000, cpm: 34, ctr: 2.4, connect: 86, playRate: 50, conv: 1.5, ret1: 52, retPitch: 18, front: 97, priceU1: 197, priceU2: 297, refund: 14, upsell1: 24, upsell2: 9, gate: 1.4, size: "medio" },
+    G: { niche: "Relacionamento", invest: 3000, cpm: 22, ctr: 2.8, connect: 74, playRate: 44, conv: 2.1, ret1: 57, retPitch: 26, front: 97, priceU1: 147, priceU2: 197, refund: 7, upsell1: 16, upsell2: 6, gate: 1.3, size: "micro" },
+    H: { niche: "Estética", invest: 15000, cpm: 48, ctr: 1.6, connect: 90, playRate: 61, conv: 1.8, ret1: 63, retPitch: 29, front: 247, priceU1: 347, priceU2: 497, refund: 10, upsell1: 9, upsell2: 3, gate: 1.5, size: "medio" },
+    I: { niche: "Finanças", invest: 6000, cpm: 70, ctr: 1.1, connect: 83, playRate: 49, conv: 3.2, ret1: 64, retPitch: 36, front: 397, priceU1: 597, priceU2: 897, refund: 6, upsell1: 11, upsell2: 4, gate: 1.6, size: "micro" },
+    J: { niche: "Emagrecimento", invest: 50000, cpm: 41, ctr: 2.0, connect: 87, playRate: 53, conv: 2.2, ret1: 59, retPitch: 27, front: 197, priceU1: 297, priceU2: 597, refund: 13, upsell1: 19, upsell2: 7, gate: 1.7, size: "macro" }
+  };
+  var OPT = ["cpcInformado", "vturbViews", "vturbPlays", "vendasReais", "faturamentoReal"];
+
+  /* ---------- alavancas ----------
+     dir +1: maior é melhor, z = [abaixo disso é ruim, abaixo disso é ok].
+     dir -1: menor é melhor, z = [até isso é bom, até isso é ok]. */
+  var LEVERS = {
+    cpm:      { label: "CPM", sub: "R$ por mil impressões", pre: "R$", min: 10, max: 200, step: 1, d: 2, trim: true, dir: -1, z: [60, 90], words: ["alto", "ok", "bom"], stage: 1, cap: 20, effort: "difícil · conta e segmentação", eRank: 4 },
+    ctr:      { label: "CTR de link", sub: "cliques no link ÷ impressões", suf: "%", min: 0.3, max: 6, step: 0.05, d: 2, dir: 1, z: [1.8, 2.4], words: ["baixo", "ok", "bom"], stage: 1, cap: 5, effort: "médio · criativos", eRank: 2 },
+    connect:  { label: "Connect rate", sub: "visualizações ÷ cliques", suf: "%", min: 40, max: 100, step: 1, d: 0, dir: 1, z: [80, 90], words: ["baixo", "ok", "ótimo"], stage: 2, cap: 97, effort: "fácil · técnico", eRank: 1 },
+    playRate: { label: "Play rate", sub: "plays ÷ visitas", suf: "%", min: 5, max: 90, step: 1, d: 0, dir: 1, z: [40, 50], words: ["baixo", "ok", "bom"], stage: 3, cap: 75, effort: "fácil · página e capa", eRank: 1 },
+    conv:     { label: "Conversão", sub: "vendas do front ÷ plays", suf: "%", min: 0.2, max: 8, step: 0.05, d: 2, dir: 1, z: [1.75, 2], words: ["baixa", "ok", "boa"], stage: 4, cap: 6, effort: "médio a difícil · VSL", eRank: 3, route: "Conversão do front" },
+    ret1:     { label: "Retenção 1 min", sub: "leitura, não entra na conta", suf: "%", min: 5, max: 95, step: 1, d: 0, dir: 1, z: [50, 60], words: ["baixa", "ok", "boa"], stage: 4, readOnly: true },
+    retPitch: { label: "Retenção até o pitch", sub: "leitura, não entra na conta", suf: "%", min: 2, max: 70, step: 1, d: 0, dir: 1, z: [15, 30], words: ["baixa", "ok", "boa"], stage: 4, readOnly: true },
+    upsell1:  { label: "Taxa upsell 1", sub: "% dos compradores do front", suf: "%", min: 0, max: 60, step: 0.5, d: 1, dir: 1, z: [10, 14], words: ["baixo", "ok", "bom"], stage: 5, cap: 35, effort: "fácil · oferta, não custa tráfego", eRank: 1, route: "Upsell 1 (sozinho)" },
+    upsell2:  { label: "Taxa upsell 2", sub: "% dos compradores do front", suf: "%", min: 0, max: 40, step: 0.5, d: 1, dir: 1, z: [3, 4.5], words: ["baixo", "ok", "bom"], stage: 5, cap: 15, effort: "fácil · oferta, não custa tráfego", eRank: 1, route: "Upsell 2 (sozinho)" }
+  };
+  var ROUTE_ORDER = ["playRate", "upsell1", "upsell2", "ctr", "conv", "cpm", "connect"];
+  var FLAG_ORDER = ["ctr", "cpm", "connect", "playRate", "conv", "upsell1", "upsell2"];
+
+  var FIELDS = {
+    invest:   { label: "Investimento", pre: "R$", d: 2, trim: true },
+    tax:      { label: "Imposto sobre mídia", suf: "%", d: 1 },
+    front:    { label: "Preço do front", pre: "R$", d: 2, trim: true },
+    priceU1:  { label: "Upsell 1", pre: "R$", d: 2, trim: true },
+    priceU2:  { label: "Upsell 2", pre: "R$", d: 2, trim: true },
+    refund:   { label: "Reembolso", suf: "%", d: 1 },
+    cpcInformado:    { label: "CPC de link informado", pre: "R$", d: 2, opt: true },
+    vturbViews:      { label: "Visualizações (Vturb)", d: 0, opt: true },
+    vturbPlays:      { label: "Plays (Vturb)", d: 0, opt: true },
+    vendasReais:     { label: "Vendas reais do front", d: 0, opt: true },
+    faturamentoReal: { label: "Faturamento real", pre: "R$", d: 2, trim: true, opt: true }
+  };
+
+  var STAGES = [null,
+    { name: "Impressões", to: "Cliques", col: "trafego" },
+    { name: "Cliques", to: "Visitas", col: "pagina" },
+    { name: "Visitas", to: "Plays", col: "video" },
+    { name: "Plays", to: "Vendas", col: "vsl" },
+    { name: "Vendas", to: "Ticket", col: "oferta" }];
+
+  var COLS = [
+    { id: "trafego", s: 1, title: "Tráfego", src: "Gerenciador · CPC é o resultado, CPM e CTR são as causas", fields: ["invest", "tax"], levers: ["cpm", "ctr"], confer: ["cpcInformado"] },
+    { id: "pagina", s: 2, title: "Página", src: "Gerenciador · visualizações da página ÷ cliques no link", fields: [], levers: ["connect"] },
+    { id: "video", s: 3, title: "Vídeo", src: "Vturb · recalculado na base do Meta quando não bate", fields: [], levers: ["playRate"], confer: ["vturbViews", "vturbPlays"] },
+    { id: "vsl", s: 4, title: "VSL", src: "Vturb · retenção é leitura, conversão entra na conta", fields: [], levers: ["conv", "ret1", "retPitch"], confer: ["vendasReais"] },
+    { id: "oferta", s: 5, title: "Oferta", src: "Plataforma · upsell não custa tráfego", fields: ["front", "priceU1", "priceU2", "refund"], levers: ["upsell1", "upsell2"], confer: ["faturamentoReal"] }
+  ];
+
+  /* ---------- estado ---------- */
+  var KEY = "plugu-simulador-funil-v1";
+  var S, base = null;
+  function fromCase(id) {
+    var c = id ? CASES[id] : {};
+    var s = Object.assign({}, BLANK, c);
+    delete s.niche;
+    s.caseId = id || "";
+    s.nicho = c.niche || "";
+    OPT.forEach(function (k) { s[k] = NaN; });
+    return s;
+  }
+  function revive(o) {
+    var s = Object.assign(fromCase("B"), o);
+    OPT.forEach(function (k) { if (typeof s[k] !== "number") s[k] = NaN; });
+    return s;
+  }
+  function load() {
+    S = fromCase("B");
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return;
+      var o = JSON.parse(raw);
+      if (o.S) S = revive(o.S);
+      if (o.base) base = revive(o.base);
+    } catch (e) {}
+  }
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify({ S: S, base: base })); } catch (e) {}
+  }
+  function same(a, b) {
+    return Object.keys(a).every(function (k) { return a[k] === b[k] || (a[k] !== a[k] && b[k] !== b[k]); });
+  }
+
+  /* ---------- cálculo ---------- */
+  function calc(s) {
+    var r = {};
+    r.imp = s.cpm > 0 ? s.invest / s.cpm * 1000 : 0;
+    r.clicks = r.imp * s.ctr / 100;
+    r.visits = r.clicks * s.connect / 100;
+    r.plays = r.visits * s.playRate / 100;
+    r.sales = r.plays * s.conv / 100;
+    r.extra = s.upsell1 / 100 * s.priceU1 + s.upsell2 / 100 * s.priceU2;
+    r.ticket = s.front + r.extra;
+    r.rev = r.sales * r.ticket;
+    r.roas = s.invest > 0 ? r.rev / s.invest : 0;
+    r.cost = s.invest * (1 + s.tax / 100);
+    r.net = r.rev * (1 - s.refund / 100);
+    r.roasReal = r.cost > 0 ? r.net / r.cost : 0;
+    r.profit = r.net - r.cost;
+    r.cpa = r.sales > 0 ? s.invest / r.sales : Infinity;
+    r.cpaTax = r.sales > 0 ? r.cost / r.sales : Infinity;
+    r.cpc = r.clicks > 0 ? s.invest / r.clicks : Infinity;
+    r.cpcMax = r.clicks > 0 && s.gate > 0 ? r.rev / r.clicks / s.gate : 0;
+    r.costVisit = r.visits > 0 ? s.invest / r.visits : Infinity;
+    r.costPlay = r.plays > 0 ? s.invest / r.plays : Infinity;
+    r.pitchConv = s.retPitch > 0 ? s.conv / s.retPitch * 100 : 0;
+    r.ticketX = s.front > 0 ? r.ticket / s.front : 0;
+    r.u1Sales = r.sales * s.upsell1 / 100;
+    r.u2Sales = r.sales * s.upsell2 / 100;
+    // k = quanto vendas (ou ticket) precisam multiplicar para o ROAS chegar ao portão
+    r.k = r.roas > 0 ? s.gate / r.roas : Infinity;
+    r.gap = (r.k - 1) * 100;
+    var extraNeed = r.ticket * (r.k - 1);
+    r.need = {
+      cpm: s.cpm / r.k,
+      ctr: s.ctr * r.k,
+      connect: s.connect * r.k,
+      playRate: s.playRate * r.k,
+      conv: s.conv * r.k,
+      upsell1: s.priceU1 > 0 ? s.upsell1 + extraNeed / s.priceU1 * 100 : Infinity,
+      upsell2: s.priceU2 > 0 ? s.upsell2 + extraNeed / s.priceU2 * 100 : Infinity
+    };
+    r.ticketNeed = r.ticket * r.k;
+    return r;
+  }
+
+  function band(key, v) {
+    var L = LEVERS[key], i;
+    if (L.dir > 0) i = v < L.z[0] ? 0 : v < L.z[1] ? 1 : 2;
+    else i = v <= L.z[0] ? 2 : v <= L.z[1] ? 1 : 0;
+    return { cls: ["ruim", "ok", "bom"][i], word: L.words[i], bad: i === 0 };
+  }
+  function feasible(key, need) {
+    var L = LEVERS[key];
+    if (!isFinite(need)) return false;
+    return key === "cpm" ? need >= L.cap : need <= L.cap && need <= 100;
+  }
+  function leverText(key, v) {
+    var L = LEVERS[key];
+    return L.pre ? money(v, 2) : pct(v, L.d);
+  }
+
+  /* ---------- montagem ---------- */
+  function $(id) { return document.getElementById(id); }
+  var CHECK_OK = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>';
+  var CHECK_WARN = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v6M8 12.5v.5"/></svg>';
+
+  function fieldHTML(key) {
+    var F = FIELDS[key];
+    return '<div class="field"><label for="' + key + '">' + F.label + '</label><span class="fbox">' +
+      (F.pre ? '<span class="unit">' + F.pre + '</span>' : '') +
+      '<input id="' + key + '" data-f="' + key + '" class="numin num" type="text" inputmode="decimal" autocomplete="off"' + (F.opt ? ' placeholder="opcional"' : '') + '>' +
+      (F.suf ? '<span class="unit">' + F.suf + '</span>' : '') + '</span></div>';
+  }
+  function leverHTML(key) {
+    var L = LEVERS[key];
+    return '<div class="lever" id="lv-' + key + '"><div class="lv-top"><label for="n-' + key + '">' + L.label + '</label><span class="lv-val">' +
+      (L.pre ? '<span class="unit">' + L.pre + '</span>' : '') +
+      '<input id="n-' + key + '" data-l="' + key + '" class="numin num" type="text" inputmode="decimal" autocomplete="off">' +
+      (L.suf ? '<span class="unit">' + L.suf + '</span>' : '') + '</span></div>' +
+      '<small class="lv-sub">' + L.sub + '</small>' +
+      '<div class="rng"><span class="zones" aria-hidden="true"></span><span class="mk need" aria-hidden="true" hidden></span>' +
+      '<input type="range" data-r="' + key + '" min="' + L.min + '" max="' + L.max + '" step="' + L.step + '" aria-label="' + L.label + '"></div>' +
+      '<div class="lv-foot"><span class="band"></span><span class="need-t" hidden>precisa <b class="num"></b></span></div></div>';
+  }
+  function zonesCSS(key) {
+    var L = LEVERS[key], span = L.max - L.min;
+    var a = (L.z[0] - L.min) / span * 100, b = (L.z[1] - L.min) / span * 100;
+    var c1 = L.dir > 0 ? "var(--bad)" : "var(--good)", c3 = L.dir > 0 ? "var(--good)" : "var(--bad)";
+    return "linear-gradient(90deg," + c1 + " 0 " + a + "%,var(--ok) " + a + "% " + b + "%," + c3 + " " + b + "% 100%)";
+  }
+
+  function build() {
+    $("caseSel").innerHTML = '<option value="">Em branco</option>' + Object.keys(CASES).map(function (id) {
+      return '<option value="' + id + '">Caso ' + id + ' · ' + CASES[id].niche + '</option>';
+    }).join("");
+
+    $("line").innerHTML = [1, 2, 3, 4, 5].map(function (i) {
+      var st = STAGES[i];
+      function stn(cls, nm, id) {
+        return '<span class="stn ' + cls + '"><span class="lbl"><span class="nm">' + nm + '</span><b class="num" id="' + id + '"></b></span><span class="dot" aria-hidden="true"></span></span>';
+      }
+      return '<div class="seg s' + i + '" id="seg' + i + '">' + stn(i === 1 ? "first" : "", st.name, "st" + i) +
+        (i === 5 ? stn("end", "Ticket", "st6") : "") +
+        '<button class="hit" data-go="' + st.col + '"><span class="bar"></span><span class="rate" id="rate' + i + '"></span></button></div>';
+    }).join("");
+
+    $("cols").innerHTML = COLS.map(function (c) {
+      var h = '<div id="col-' + c.id + '" class="col s' + c.s + '"><div class="col-head"><h3>' + c.title + '</h3>' +
+        '<span class="col-meta num" id="meta-' + c.id + '"></span><p class="src">' + c.src + '</p>' +
+        '<span class="band ruim" id="flag-' + c.id + '" hidden>em obras</span></div><div class="col-body">';
+      if (c.fields.length) h += '<div class="fields">' + c.fields.map(fieldHTML).join("") + '</div>';
+      h += c.levers.map(leverHTML).join("");
+      h += '<dl class="readouts num" id="ro-' + c.id + '"></dl>';
+      if (c.confer) h += '<details class="confer"><summary>Conferir com dados reais</summary><div class="fields">' + c.confer.map(fieldHTML).join("") + '</div><ul class="checks" id="ck-' + c.id + '"></ul></details>';
+      return h + '</div></div>';
+    }).join("");
+    Object.keys(LEVERS).forEach(function (k) {
+      document.querySelector("#lv-" + k + " .zones").style.background = zonesCSS(k);
+    });
+
+    $("capsHint").textContent = "Tetos propostos: CTR " + fmt(LEVERS.ctr.cap, 2, true) + "%, connect " + LEVERS.connect.cap + "%, play rate " + LEVERS.playRate.cap +
+      "%, conversão " + fmt(LEVERS.conv.cap, 2, true) + "%, upsell 1 " + LEVERS.upsell1.cap + "%, upsell 2 " + LEVERS.upsell2.cap + "%, CPM mínimo R$ " + LEVERS.cpm.cap + ".";
+  }
+
+  /* ---------- campos <-> estado ---------- */
+  function fmtField(key, v) {
+    var F = FIELDS[key] || LEVERS[key];
+    return isFinite(v) ? fmt(v, F.d, F.trim) : "";
+  }
+  function syncInputs(except) {
+    document.querySelectorAll("[data-f],[data-l]").forEach(function (inp) {
+      if (inp === except) return;
+      var k = inp.dataset.f || inp.dataset.l;
+      inp.value = fmtField(k, S[k]);
+    });
+    document.querySelectorAll("[data-r]").forEach(function (r) {
+      if (r !== except) r.value = S[r.dataset.r];
+    });
+    if (except !== $("gate")) $("gate").value = fmt(S.gate, 2, true);
+    if (except !== $("nicho")) $("nicho").value = S.nicho;
+    $("caseSel").value = S.caseId;
+    $("size").value = S.size;
+  }
+
+  /* ---------- render ---------- */
+  var focusLever = null;
+
+  function render() {
+    var r = calc(S);
+    var above = r.roas >= S.gate;
+    var gateTxt = fmt(S.gate, 2, true);
+    var rb = base ? calc(base) : null;
+
+    // faixas e marcadores das alavancas
+    var bad = {};
+    Object.keys(LEVERS).forEach(function (k) {
+      var L = LEVERS[k], b = band(k, S[k]), box = $("lv-" + k);
+      bad[k] = b.bad;
+      box.classList.toggle("is-bad", b.bad);
+      var bEl = box.querySelector(".lv-foot .band");
+      bEl.className = "band " + b.cls;
+      bEl.textContent = b.word;
+      box.querySelector("input[type=range]").setAttribute("aria-valuetext", leverText(k, S[k]) + ", " + b.word);
+      var mk = box.querySelector(".mk"), nt = box.querySelector(".need-t"), need = r.need[k];
+      var show = !L.readOnly && !above && isFinite(need) && need >= L.min && need <= L.max;
+      mk.hidden = nt.hidden = !show;
+      if (show) {
+        mk.style.left = (need - L.min) / (L.max - L.min) * 100 + "%";
+        nt.querySelector("b").textContent = leverText(k, need);
+      }
+    });
+
+    // trecho em obras = primeiro trecho do funil com alavanca fora da faixa
+    var flagKey = null;
+    for (var i = 0; i < FLAG_ORDER.length; i++) if (bad[FLAG_ORDER[i]]) { flagKey = FLAG_ORDER[i]; break; }
+    var routes = ROUTE_ORDER.map(function (k) {
+      return { k: k, need: r.need[k], ok: feasible(k, r.need[k]) };
+    }).sort(function (a, b) {
+      return (b.ok - a.ok) || (LEVERS[a.k].eRank - LEVERS[b.k].eRank) || (ROUTE_ORDER.indexOf(a.k) - ROUTE_ORDER.indexOf(b.k));
+    });
+    focusLever = above ? null : (flagKey || (routes[0].ok ? routes[0].k : null));
+    var flagStage = flagKey && !above ? LEVERS[flagKey].stage : 0;
+
+    // destino
+    $("roasBig").textContent = fmt(r.roas, 2);
+    $("roasOf").textContent = "/ " + gateTxt;
+    $("roasSub").textContent = "ROAS · real " + fmt(r.roasReal, 2);
+    var chip = $("gateChip");
+    chip.className = "chip " + (above ? "good" : "warn");
+    chip.textContent = above
+      ? "Acima do portão · sobra " + fmt((r.roas / S.gate - 1) * 100, 1) + "%"
+      : "Abaixo do portão · faltam " + (isFinite(r.gap) ? fmt(r.gap, 1) + "%" : "tudo");
+
+    var msg = message(focusLever, r, above, !!flagKey);
+    $("where").textContent = msg.where;
+    $("nextBtn").textContent = msg.title;
+    $("nextTxt").textContent = msg.text;
+    $("rule").textContent = msg.rule;
+
+    var kp = [
+      { dt: "Vendas front", dd: int(r.sales), v: r.sales, b: rb && rb.sales, f: function (d) { return (d > 0 ? "+" : "−") + int(Math.abs(d)); } },
+      { dt: "CPA", dd: money(r.cpa), delta: "c/ imposto " + money(r.cpaTax), v: r.cpa, b: rb && rb.cpa, inv: true, f: function (d) { return signed(d, money); } },
+      { dt: "Lucro real", dd: money(r.profit), cls: r.profit >= 0 ? "pos" : "neg", delta: "fat. " + money(r.rev), v: r.profit, b: rb && rb.profit, f: function (d) { return signed(d, money); } },
+      { dt: "Ticket médio", dd: money(r.ticket), delta: fmt(r.ticketX, 2) + "× o front", v: r.ticket, b: rb && rb.ticket, f: function (d) { return signed(d, money); } }
+    ];
+    $("kpis").innerHTML = kp.map(function (x) {
+      var vs = "";
+      if (x.b != null && isFinite(x.b) && isFinite(x.v) && Math.abs(x.v - x.b) >= 0.5) {
+        var d = x.v - x.b;
+        vs = '<span class="vsb ' + ((d > 0) !== !!x.inv ? "up" : "down") + '">' + x.f(d) + ' vs base</span>';
+      }
+      return '<div><dt>' + x.dt + '</dt><dd' + (x.cls ? ' class="' + x.cls + '"' : '') + '>' + x.dd + '</dd>' +
+        (x.delta ? '<span class="delta">' + x.delta + '</span>' : '') + vs + '</div>';
+    }).join("");
+    var rv = $("roasVs");
+    if (rb) {
+      var dr = r.roas - rb.roas;
+      if (Math.abs(dr) < 0.005) { rv.className = "vsb num"; rv.textContent = "igual à base"; }
+      else { rv.className = "vsb num " + (dr > 0 ? "up" : "down"); rv.textContent = signed(dr, function (n) { return fmt(n, 2); }) + " vs base (" + fmt(rb.roas, 2) + ")"; }
+    } else rv.textContent = "";
+
+    // linha do funil
+    var counts = [null, r.imp, r.clicks, r.visits, r.plays, r.sales];
+    for (var s = 1; s <= 5; s++) $("st" + s).textContent = int(counts[s]);
+    $("st6").textContent = money(r.ticket);
+    var rates = [null, "CTR " + pct(S.ctr, 2), "connect " + pct(S.connect, 0), "play rate " + pct(S.playRate, 0),
+      "conversão " + pct(S.conv, 2), "upsells " + pct(S.upsell1, 1) + " · " + pct(S.upsell2, 1)];
+    var stageBad = [false, bad.ctr || bad.cpm, bad.connect, bad.playRate, bad.conv, bad.upsell1 || bad.upsell2];
+    for (s = 1; s <= 5; s++) {
+      $("rate" + s).textContent = rates[s];
+      var seg = $("seg" + s);
+      seg.classList.toggle("bad", stageBad[s]);
+      seg.classList.toggle("work", s === flagStage);
+      seg.querySelector(".hit").setAttribute("aria-label", STAGES[s].name + " para " + STAGES[s].to + ": " + rates[s] + (stageBad[s] ? ", fora da faixa" : "") + ". Ir às alavancas.");
+    }
+
+    // colunas
+    COLS.forEach(function (c) {
+      var on = c.s === flagStage;
+      $("col-" + c.id).classList.toggle("flag", on);
+      $("flag-" + c.id).hidden = !on;
+    });
+    $("meta-trafego").textContent = int(r.clicks) + " cliques · CTR " + pct(S.ctr, 2);
+    $("meta-pagina").textContent = int(r.visits) + " visitas · connect " + pct(S.connect, 0);
+    $("meta-video").textContent = int(r.plays) + " plays · play rate " + pct(S.playRate, 0);
+    $("meta-vsl").textContent = int(r.sales) + " vendas · conversão " + pct(S.conv, 2);
+    $("meta-oferta").textContent = "ticket " + money(r.ticket) + " · " + fmt(r.ticketX, 2) + "× o front";
+
+    function ro(pairs) { return pairs.map(function (p) { return "<div><dt>" + p[0] + "</dt><dd>" + p[1] + "</dd></div>"; }).join(""); }
+    var pb = r.pitchConv < 4 ? ["ruim", "baixa"] : r.pitchConv < 6 ? ["ok", "ok"] : ["bom", "boa"];
+    var tb = r.ticketX < 1.1 ? ["ruim", "baixo"] : r.ticketX < 1.25 ? ["ok", "ok"] : ["bom", "bom"];
+    $("ro-trafego").innerHTML = ro([["CPC calculado", money(r.cpc, 2)], ["CPC máximo p/ " + gateTxt, money(r.cpcMax, 2)], ["Impressões", int(r.imp)], ["Cliques", int(r.clicks)]]);
+    $("ro-pagina").innerHTML = ro([["Visitas", int(r.visits)], ["Custo por visita", money(r.costVisit, 2)]]);
+    $("ro-video").innerHTML = ro([["Plays", int(r.plays)], ["Custo por play", money(r.costPlay, 2)]]);
+    $("ro-vsl").innerHTML = ro([["Conversão sobre o pitch", fmt(r.pitchConv, 1) + '% <span class="band ' + pb[0] + '">' + pb[1] + '</span>']]);
+    $("ro-oferta").innerHTML = ro([["Ticket médio", money(r.ticket) + ' <span class="band ' + tb[0] + '">' + tb[1] + '</span>'],
+      ["Receita extra por venda", money(r.extra)], ["Vendas upsell 1 · 2", int(r.u1Sales) + " · " + int(r.u2Sales)]]);
+
+    renderChecks(r);
+
+    // rotas
+    if (above) {
+      $("routesHint").textContent = "ROAS " + fmt(r.roas, 2) + " já está acima do portão " + gateTxt + ". Nenhuma alavanca precisa mudar para chegar lá.";
+      $("routesWrap").hidden = true;
+    } else if (!isFinite(r.k)) {
+      $("routesHint").textContent = "Sem vendas no funil: ajuste os números para ver as rotas.";
+      $("routesWrap").hidden = true;
+    } else {
+      $("routesWrap").hidden = false;
+      $("routesHint").textContent = "Cada alavanca sozinha, para ir de " + fmt(r.roas, 2) + " a " + gateTxt + " (+" + fmt(r.gap, 1) + "% em vendas ou ticket).";
+      $("routes").innerHTML = routes.map(function (x) {
+        var L = LEVERS[x.k], now = S[x.k], need = x.need, mean;
+        if (x.k === "upsell1" || x.k === "upsell2") mean = "ticket " + money(r.ticket) + " → " + money(r.ticketNeed);
+        else if (x.k === "cpm") mean = "−" + money(now - need, 2);
+        else mean = "+" + fmt(need - now, Math.max(L.d, 1)) + " pp";
+        var nowTxt = x.k === "cpm" ? money(now, 2) : pct(now, L.d);
+        var needTxt = !isFinite(need) ? "—" : x.k === "cpm" ? money(need, 2) : pct(need, Math.max(L.d, 1));
+        return '<tr class="' + (x.ok ? "" : "dim") + '"><td><button class="linklike" data-lever="' + x.k + '">' + (L.route || L.label) + '</button></td>' +
+          '<td class="r" data-l="Hoje">' + nowTxt + '</td><td class="r" data-l="Precisaria"><b>' + needTxt + '</b></td>' +
+          '<td class="muted" data-l="O que significa">' + (isFinite(need) ? mean : "—") + '</td>' +
+          '<td data-l="Viabilidade">' + (x.ok ? '<span class="tag ok">dentro do teto</span>' : '<span class="tag imp">impossível sozinha</span>') + '</td>' +
+          '<td class="muted" data-l="Esforço">' + L.effort + '</td></tr>';
+      }).join("");
+    }
+
+    // barra compacta
+    $("miniRoas").innerHTML = fmt(r.roas, 2) + "<small> / " + gateTxt + "</small>";
+    var mc = $("miniChip");
+    mc.className = "chip " + (above ? "good" : "warn");
+    mc.textContent = above ? "Acima do portão" : "Abaixo do portão";
+    $("miniNext").textContent = msg.title;
+    $("miniKpi").textContent = int(r.sales) + " vendas · CPA " + money(r.cpa);
+
+    $("backBase").disabled = !base || same(base, S);
+    save();
+  }
+
+  function message(key, r, above, flagged) {
+    function rule(k) { return (S.caseId ? "regra do caso " + S.caseId + " · " : "") + "esforço " + LEVERS[k].effort.split(" · ")[0]; }
+    if (above) return {
+      where: "Funil no destino",
+      title: "ROAS " + fmt(r.roas, 2) + " acima de " + fmt(S.gate, 2, true) + " → escalar.",
+      text: "Suba o investimento aos poucos e acompanhe CPM e CTR, que costumam piorar com a escala. Lucro real hoje " + money(r.profit) + ".",
+      rule: S.caseId ? "regra do caso " + S.caseId : ""
+    };
+    if (!key) return {
+      where: "Sem rota única",
+      title: "Nenhuma alavanca sozinha chega a " + fmt(S.gate, 2, true) + ".",
+      text: "Combine melhorias em mais de uma etapa; veja as rotas abaixo.", rule: ""
+    };
+    var st = STAGES[LEVERS[key].stage];
+    var where = (flagged ? "Trecho em obras · " : "Rota mais leve · ") + st.name + " → " + st.to;
+    var v = leverText(key, S[key]);
+    if (!flagged) return {
+      where: where,
+      title: LEVERS[key].label + " " + v + " → " + leverText(key, r.need[key]) + ".",
+      text: "Nenhum trecho está fora da faixa; esta é a alavanca mais leve que, sozinha, leva o ROAS ao portão.",
+      rule: rule(key)
+    };
+    var T = {
+      ctr: ["CTR " + v + " baixo → criativos.", "Teste novos hooks; ~2% costuma ser alcançável. CPC hoje " + money(r.cpc, 2) + ", " + (r.cpc > r.cpcMax ? "acima do" : "dentro do") + " máximo que o funil paga (" + money(r.cpcMax, 2) + ")."],
+      cpm: ["CPM " + v + " alto → público e conta.", "Revise segmentação, frequência e saúde da conta. Cada real a menos no CPM barateia o funil inteiro na mesma proporção."],
+      connect: ["Connect " + v + " baixo → velocidade da página.", "Cliques se perdem antes da página abrir: confira carregamento, redirecionamentos e pixel. Mire em 85% ou mais."],
+      playRate: ["Play rate " + v + " baixo → página e capa.", "Player acima da dobra, capa que convide ao play e autoplay mudo costumam destravar este trecho."],
+      conv: ["Conversão " + v + " baixa → VSL.", "Retenção até o pitch " + pct(S.retPitch, 0) + " e conversão sobre o pitch " + pct(r.pitchConv, 1) + ": veja se o problema é chegar ao pitch ou a oferta em si."],
+      upsell1: ["Upsell 1 " + v + " baixo → oferta.", "Ajuste promessa e preço do primeiro upsell; cada ponto aqui sobe o ticket sem custar tráfego."],
+      upsell2: ["Upsell 2 " + v + " baixo → oferta.", "Revise o segundo upsell; cada ponto aqui sobe o ticket sem custar tráfego."]
+    }[key];
+    return { where: where, title: T[0], text: T[1], rule: rule(key) };
+  }
+
+  function renderChecks(r) {
+    function li(ok, txt) {
+      return '<li class="' + (ok ? "ok" : "warn") + '">' + (ok ? CHECK_OK : CHECK_WARN) + '<span><span class="sr">' + (ok ? "Ok: " : "Atenção: ") + '</span>' + txt + '</span></li>';
+    }
+    function use(k, v) { return '<button class="use" data-set="' + k + '" data-v="' + v + '">usar ' + leverText(k, v) + '</button>'; }
+    function diff(a, b) { return (a - b) / b * 100; }
+    function sgn(d) { return (d > 0 ? "+" : "−") + fmt(Math.abs(d), 0) + "%"; }
+
+    var t = [];
+    if (isFinite(S.cpcInformado) && isFinite(r.cpc)) {
+      var d = diff(S.cpcInformado, r.cpc);
+      t.push(Math.abs(d) <= 10
+        ? li(true, "CPC informado " + money(S.cpcInformado, 2) + " bate com o calculado (" + money(r.cpc, 2) + ").")
+        : li(false, "CPC informado " + money(S.cpcInformado, 2) + " difere " + fmt(Math.abs(d), 0) + "% do calculado (" + money(r.cpc, 2) + "): confira CPM e CTR de link no Gerenciador."));
+    } else t.push(li(true, "CPC calculado " + money(r.cpc, 2) + ". Informe o CPC de link do Gerenciador para conferir."));
+    $("ck-trafego").innerHTML = t.join("");
+
+    t = [];
+    if (isFinite(S.vturbViews) && isFinite(S.vturbPlays) && S.vturbViews > 0 && r.visits > 0) {
+      var vr = S.vturbPlays / S.vturbViews * 100, dv = diff(S.vturbViews, r.visits);
+      if (Math.abs(dv) <= 15) {
+        t.push(li(true, "Vturb e Meta batem (" + int(S.vturbViews) + " visualizações × " + int(r.visits) + " visitas). Play rate pela Vturb: " + pct(vr, 0) + "." + use("playRate", Math.min(90, Math.round(vr)))));
+      } else {
+        var rec = S.vturbPlays / r.visits * 100;
+        t.push(li(false, "Vturb registrou " + int(S.vturbViews) + " visualizações contra " + int(r.visits) + " visitas do Meta (" + sgn(dv) + "). Play rate recalculado na base do Meta: " + pct(rec, 0) + "." + use("playRate", Math.min(90, Math.round(rec)))));
+      }
+    } else t.push(li(true, "Sem números absolutos da Vturb; play rate e conversão informados são usados como estão."));
+    $("ck-video").innerHTML = t.join("");
+
+    t = [];
+    if (isFinite(S.vendasReais) && r.plays > 0) {
+      var dvd = r.sales > 0 ? diff(S.vendasReais, r.sales) : 100, rc = S.vendasReais / r.plays * 100;
+      t.push(Math.abs(dvd) <= 10
+        ? li(true, "Vendas reais (" + int(S.vendasReais) + ") batem com as simuladas (" + int(r.sales) + ").")
+        : li(false, "Vendas reais " + int(S.vendasReais) + " contra " + int(r.sales) + " simuladas: a conversão real sobre os plays seria " + pct(rc, 2) + "." + use("conv", Math.min(8, Math.round(rc * 20) / 20))));
+    }
+    $("ck-vsl").innerHTML = t.join("");
+
+    t = [];
+    if (isFinite(S.faturamentoReal) && r.rev > 0) {
+      var df = diff(S.faturamentoReal, r.rev);
+      var sales = isFinite(S.vendasReais) && S.vendasReais > 0 ? S.vendasReais : r.sales;
+      t.push(Math.abs(df) <= 10
+        ? li(true, "Faturamento real " + money(S.faturamentoReal) + " bate com o simulado (" + money(r.rev) + ").")
+        : li(false, "Faturamento real " + money(S.faturamentoReal) + " contra " + money(r.rev) + " simulado (" + sgn(df) + "). Ticket real ≈ " + money(S.faturamentoReal / sales) + ": confira preços e taxas de upsell."));
+    }
+    $("ck-oferta").innerHTML = t.join("");
+  }
+
+  /* ---------- eventos ---------- */
+  function goTo(key) {
+    var box = $("lv-" + key);
+    if (!box) return;
+    box.scrollIntoView({ behavior: "smooth", block: "center" });
+    box.classList.remove("pulse"); void box.offsetWidth; box.classList.add("pulse");
+    setTimeout(function () { var i = $("n-" + key); if (i) i.focus({ preventScroll: true }); }, 450);
+  }
+
+  document.addEventListener("input", function (e) {
+    var t = e.target, k, v;
+    if ((k = t.dataset.r)) { S[k] = parseFloat(t.value); syncInputs(t); render(); return; }
+    if ((k = t.dataset.l) || (k = t.dataset.f)) {
+      v = parseNum(t.value);
+      if (FIELDS[k] && FIELDS[k].opt) S[k] = isFinite(v) && v >= 0 ? v : NaN;
+      else if (isFinite(v)) S[k] = Math.max(0, (LEVERS[k] && LEVERS[k].suf) || k === "tax" || k === "refund" ? Math.min(v, 100) : v);
+      else return;
+      syncInputs(t); render(); return;
+    }
+    if (t.id === "gate") { v = parseNum(t.value); if (isFinite(v) && v > 0) { S.gate = v; render(); } return; }
+    if (t.id === "nicho") { S.nicho = t.value; save(); }
+  });
+  document.addEventListener("change", function (e) {
+    var t = e.target;
+    if (t.id === "caseSel") { S = fromCase(t.value); syncInputs(); render(); }
+    else if (t.id === "size") { S.size = t.value; render(); }
+  });
+  document.addEventListener("focusout", function (e) {
+    var t = e.target;
+    if (t.dataset && (t.dataset.l || t.dataset.f || t.id === "gate")) syncInputs();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && e.target.classList && e.target.classList.contains("numin")) e.target.blur();
+  });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (!b) return;
+    if (b.dataset.go) { $("col-" + b.dataset.go).scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    if (b.dataset.lever) { goTo(b.dataset.lever); return; }
+    if (b.dataset.set) { S[b.dataset.set] = parseFloat(b.dataset.v); syncInputs(); render(); goTo(b.dataset.set); return; }
+    if (b.id === "nextBtn") { if (focusLever) goTo(focusLever); return; }
+    if (b.id === "fixBase") {
+      base = Object.assign({}, S); render();
+      b.textContent = "Base fixada ✓";
+      setTimeout(function () { b.textContent = "Fixar como base"; }, 1400);
+      return;
+    }
+    if (b.id === "backBase" && base) { S = Object.assign({}, base); syncInputs(); render(); }
+  });
+
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (en) {
+      $("mini").classList.toggle("show", !en[0].isIntersecting && en[0].boundingClientRect.top < 0);
+    }).observe($("dest"));
+  }
+
+  load();
+  build();
+  syncInputs();
+  render();
+})();
+</script>
+</body>
 </html>

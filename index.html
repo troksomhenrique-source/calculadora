@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="nunito_9f6871af-module__PQaO8a__variable">
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="preload" href="/_next/static/immutable/media/07454f8ad8aaac57-s.p.1d8-5gtibtj96.woff2" as="font" crossorigin="" type="font/woff2"/>
+        <link rel="preload" as="image" href="/wordmark.png"/>
+        <link rel="stylesheet" href="/_next/static/immutable/chunks/2s5bx2i-aavrd.css" data-precedence="next"/>
+        <link rel="preload" as="script" fetchPriority="low" href="/_next/static/immutable/chunks/1kbt14nefgsiq.js"/>
+        <script src="/_next/static/immutable/chunks/0jo3lv8klof30.js" async=""></script>
+        <script src="/_next/static/immutable/chunks/01s4-qb-q7o6z.js" async=""></script>
+        <script src="/_next/static/immutable/chunks/turbopack-03hig4mi9qfjh.js" async=""></script>
+        <script src="/_next/static/immutable/chunks/2corl6wyj4669.js" async=""></script>
+        <script src="/_next/static/immutable/chunks/2420qmnopx7wy.js" async=""></script>
+        <title>Simulador de funil VSL · Plugu</title>
+        <meta name="description" content="Simule o funil VSL, veja o ROAS contra o portão e qual alavanca mexer primeiro."/>
+        <meta name="next-size-adjust" content=""/>
+        <script src="/_next/static/immutable/chunks/0c0hxoamwjsbw.js" noModule=""></script>
+    </head>
+    <body>
+        <div hidden=""><!--$--><!--/$--></div>
+        <div class="mini" aria-hidden="true">
+            <span class="mini-roas num">
+                1,40<small> / <!-- -->1,6</small>
+            </span>
+            <span class="chip warn">Abaixo do portão</span>
+            <span class="mini-next">CTR 1,40% baixo → criativos.</span>
+            <span class="mini-kpi num">71<!-- --> vendas · CPA <!-- -->R$ 283</span>
+        </div>
+        <header class="top">
+            <img src="/wordmark.png" alt="Plugu" class="logo"/>
+            <h1>Simulador de funil VSL</h1>
+            <div class="top-ctl">
+                <label class="pill">
+                    <span>Começar de</span>
+                    <select>
+                        <option value="">Em branco</option>
+                        <option value="A">Caso <!-- -->A<!-- --> · <!-- -->Emagrecimento</option>
+                        <option value="B" selected="">Caso <!-- -->B<!-- --> · <!-- -->Renda extra</option>
+                        <option value="C">Caso <!-- -->C<!-- --> · <!-- -->Relacionamento</option>
+                        <option value="D">Caso <!-- -->D<!-- --> · <!-- -->Estética</option>
+                        <option value="E">Caso <!-- -->E<!-- --> · <!-- -->Finanças</option>
+                        <option value="F">Caso <!-- -->F<!-- --> · <!-- -->Renda extra</option>
+                        <option value="G">Caso <!-- -->G<!-- --> · <!-- -->Relacionamento</option>
+                        <option value="H">Caso <!-- -->H<!-- --> · <!-- -->Estética</option>
+                        <option value="I">Caso <!-- -->I<!-- --> · <!-- -->Finanças</option>
+                        <option value="J">Caso <!-- -->J<!-- --> · <!-- -->Emagrecimento</option>
+                    </select>
+                </label>
+                <label class="pill">
+                    <span>Nicho</span>
+                    <input type="text" placeholder="ex.: emagrecimento" class="wide" value="Renda extra"/>
+                </label>
+                <label class="pill">
+                    <span>Tamanho</span>
+                    <select>
+                        <option value="macro" selected="">Macro</option>
+                        <option value="medio">Médio</option>
+                        <option value="micro">Micro</option>
+                    </select>
+                </label>
+                <label class="pill">
+                    <span>Portão ROAS</span>
+                    <input class="numin num" type="text" inputMode="decimal" autoComplete="off" aria-label="Portão ROAS" value="1,6"/>
+                </label>
+                <button class="btn" title="Guarda os valores atuais para comparar as mudanças">Fixar como base</button>
+                <button class="btn ghost" disabled="">Voltar à base</button>
+            </div>
+        </header>
+        <section class="dest" aria-labelledby="dest-h">
+            <div class="dest-roas">
+                <span class="big num">1,40</span>
+                <span class="of num">/ <!-- -->1,6</span>
+                <span class="sub num">ROAS · real <!-- -->1,05</span>
+            </div>
+            <div class="dest-msg" aria-live="polite">
+                <div class="chips">
+                    <span class="chip warn">Abaixo do portão · faltam <!-- -->13,9<!-- -->%</span>
+                </div>
+                <p class="where">Trecho em obras · <!-- -->Impressões → Cliques</p>
+                <h2 id="dest-h">
+                    <button class="linklike">CTR 1,40% baixo → criativos.</button>
+                </h2>
+                <p>Novos hooks; ~2% costuma ser alcançável. CPC hoje R$ 3,21, acima do máximo que o funil paga (R$ 2,82).</p>
+                <p class="rule">regra do caso B · esforço médio</p>
+            </div>
+            <dl class="kpis num">
+                <div>
+                    <dt>Vendas front</dt>
+                    <dd>71</dd>
+                </div>
+                <div>
+                    <dt>CPA</dt>
+                    <dd>R$ 283</dd>
+                    <span class="delta">c/ imposto <!-- -->R$ 322</span>
+                </div>
+                <div>
+                    <dt>Lucro real</dt>
+                    <dd class="pos">R$ 1.120</dd>
+                    <span class="delta">fat. <!-- -->R$ 28.094</span>
+                </div>
+                <div>
+                    <dt>Ticket médio</dt>
+                    <dd>R$ 398</dd>
+                    <span class="delta">1,34<!-- -->× o front</span>
+                </div>
+            </dl>
+        </section>
+        <nav class="line" aria-label="Funil: clique num trecho para ir às alavancas dele">
+            <div class="seg s1 work focus" style="--w:22.77859397088021px">
+                <span class="stn first">
+                    <span class="lbl">
+                        <span class="nm">Impressões</span>
+                        <b class="num">444.444</b>
+                    </span>
+                    <span class="dot" aria-hidden="true"></span>
+                </span>
+                <button class="hit" aria-label="Impressões para Cliques: CTR 1,40%, fora da faixa. Ir às alavancas.">
+                    <span class="bar"></span>
+                    <span class="rate">CTR 1,40%</span>
+                </button>
+            </div>
+            <div class="seg s2" style="--w:22.619047496188784px">
+                <span class="stn">
+                    <span class="lbl">
+                        <span class="nm">Cliques</span>
+                        <b class="num">6.222</b>
+                    </span>
+                    <span class="dot" aria-hidden="true"></span>
+                </span>
+                <button class="hit" aria-label="Cliques para Visitas: connect 91%. Ir às alavancas.">
+                    <span class="bar"></span>
+                    <span class="rate">connect 91%</span>
+                </button>
+            </div>
+            <div class="seg s3" style="--w:21.512792476427574px">
+                <span class="stn">
+                    <span class="lbl">
+                        <span class="nm">Visitas</span>
+                        <b class="num">5.662</b>
+                    </span>
+                    <span class="dot" aria-hidden="true"></span>
+                </span>
+                <button class="hit" aria-label="Visitas para Plays: play rate 52%. Ir às alavancas.">
+                    <span class="bar"></span>
+                    <span class="rate">play rate 52%</span>
+                </button>
+            </div>
+            <div class="seg s4" style="--w:15.203213104109018px">
+                <span class="stn">
+                    <span class="lbl">
+                        <span class="nm">Plays</span>
+                        <b class="num">2.944</b>
+                    </span>
+                    <span class="dot" aria-hidden="true"></span>
+                </span>
+                <button class="hit" aria-label="Plays para Vendas: conversão 2,40%. Ir às alavancas.">
+                    <span class="bar"></span>
+                    <span class="rate">conversão 2,40%</span>
+                </button>
+            </div>
+            <div class="seg s5" style="--w:15.203213104109018px">
+                <span class="stn">
+                    <span class="lbl">
+                        <span class="nm">Vendas</span>
+                        <b class="num">71</b>
+                    </span>
+                    <span class="dot" aria-hidden="true"></span>
+                </span>
+                <span class="stn end">
+                    <span class="lbl">
+                        <span class="nm">Ticket</span>
+                        <b class="num">R$ 398</b>
+                    </span>
+                    <span class="dot" aria-hidden="true"></span>
+                </span>
+                <button class="hit" aria-label="Vendas para Ticket: upsells 15,5% · 5,6%. Ir às alavancas.">
+                    <span class="bar"></span>
+                    <span class="rate">upsells 15,5% · 5,6%</span>
+                </button>
+            </div>
+        </nav>
+        <section class="cols" aria-label="Alavancas por etapa">
+            <div id="col-trafego" class="col s1 flag">
+                <div class="col-head">
+                    <h3>Tráfego</h3>
+                    <span class="col-meta num">6.222 cliques · CTR 1,40%</span>
+                    <p class="src">Gerenciador · CPC é o resultado, CPM e CTR são as causas</p>
+                    <span class="band ruim">em obras</span>
+                </div>
+                <div class="col-body">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="invest">Investimento</label>
+                            <span class="fbox">
+                                <span class="unit">R$</span>
+                                <input id="invest" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="20.000"/>
+                            </span>
+                        </div>
+                        <div class="field">
+                            <label for="tax">Imposto sobre mídia</label>
+                            <span class="fbox">
+                                <input id="tax" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="13,8"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-cpm">CPM</label>
+                            <span class="lv-val">
+                                <span class="unit">R$</span>
+                                <input id="n-cpm" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="45"/>
+                            </span>
+                        </div>
+                        <small class="lv-sub">R$ por mil impressões</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--good) 0 26.31578947368421%, var(--ok) 26.31578947368421% 42.10526315789473%, var(--bad) 42.10526315789473% 100%)" aria-hidden="true"></span>
+                            <span class="mk need" style="left:15.530014696842102%" aria-hidden="true"></span>
+                            <input type="range" min="10" max="200" step="1" aria-label="CPM" aria-valuetext="R$ 45,00, bom" value="45"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">bom</span>
+                            <span class="need-t">
+                                precisa <b class="num">R$ 39,51</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lever is-bad">
+                        <div class="lv-top">
+                            <label for="n-ctr">CTR de link</label>
+                            <span class="lv-val">
+                                <input id="n-ctr" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="1,40"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">cliques no link ÷ impressões</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 26.31578947368421%, var(--ok) 26.31578947368421% 36.84210526315789%, var(--good) 36.84210526315789% 100%)" aria-hidden="true"></span>
+                            <span class="mk need" style="left:22.71321025983406%" aria-hidden="true"></span>
+                            <input type="range" min="0.3" max="6" step="0.05" aria-label="CTR de link" aria-valuetext="1,40%, baixo" value="1.4"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band ruim">baixo</span>
+                            <span class="need-t">
+                                precisa <b class="num">1,59%</b>
+                            </span>
+                        </div>
+                    </div>
+                    <dl class="readouts num">
+                        <div>
+                            <dt>CPC calculado</dt>
+                            <dd>R$ 3,21</dd>
+                        </div>
+                        <div>
+                            <dt>CPC máximo p/ 1,6</dt>
+                            <dd>R$ 2,82</dd>
+                        </div>
+                        <div>
+                            <dt>Impressões</dt>
+                            <dd>444.444</dd>
+                        </div>
+                        <div>
+                            <dt>Cliques</dt>
+                            <dd>6.222</dd>
+                        </div>
+                    </dl>
+                    <details class="confer">
+                        <summary>Conferir com dados reais </summary>
+                        <div class="fields">
+                            <div class="field">
+                                <label for="cpcInformado">CPC de link informado</label>
+                                <span class="fbox">
+                                    <span class="unit">R$</span>
+                                    <input id="cpcInformado" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="checks">
+                            <li class="ok">
+                                <svg viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M3.5 8.5l3 3 6-7"></path>
+                                </svg>
+                                <span>
+                                    <span class="sr">Ok: </span>
+                                    CPC calculado R$ 3,21. Informe o CPC de link do Gerenciador para conferir.
+                                </span>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div id="col-pagina" class="col s2">
+                <div class="col-head">
+                    <h3>Página</h3>
+                    <span class="col-meta num">5.662 visitas · connect 91%</span>
+                    <p class="src">Gerenciador · visualizações da página ÷ cliques no link</p>
+                </div>
+                <div class="col-body">
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-connect">Connect rate</label>
+                            <span class="lv-val">
+                                <input id="n-connect" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="91"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">visualizações ÷ cliques</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 66.66666666666666%, var(--ok) 66.66666666666666% 83.33333333333334%, var(--good) 83.33333333333334% 100%)" aria-hidden="true"></span>
+                            <input type="range" min="40" max="100" step="1" aria-label="Connect rate" aria-valuetext="91%, ótimo" value="91"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">ótimo</span>
+                        </div>
+                    </div>
+                    <dl class="readouts num">
+                        <div>
+                            <dt>Visitas</dt>
+                            <dd>5.662</dd>
+                        </div>
+                        <div>
+                            <dt>Custo por visita</dt>
+                            <dd>R$ 3,53</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            <div id="col-video" class="col s3">
+                <div class="col-head">
+                    <h3>Vídeo</h3>
+                    <span class="col-meta num">2.944 plays · play rate 52%</span>
+                    <p class="src">Vturb · recalculado na base do Meta quando não bate</p>
+                </div>
+                <div class="col-body">
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-playRate">Play rate</label>
+                            <span class="lv-val">
+                                <input id="n-playRate" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="52"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">plays ÷ visitas</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 41.17647058823529%, var(--ok) 41.17647058823529% 52.94117647058824%, var(--good) 52.94117647058824% 100%)" aria-hidden="true"></span>
+                            <span class="mk need" style="left:63.79996236146904%" aria-hidden="true"></span>
+                            <input type="range" min="5" max="90" step="1" aria-label="Play rate" aria-valuetext="52%, bom" value="52"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">bom</span>
+                            <span class="need-t">
+                                precisa <b class="num">59%</b>
+                            </span>
+                        </div>
+                    </div>
+                    <dl class="readouts num">
+                        <div>
+                            <dt>Plays</dt>
+                            <dd>2.944</dd>
+                        </div>
+                        <div>
+                            <dt>Custo por play</dt>
+                            <dd>R$ 6,79</dd>
+                        </div>
+                    </dl>
+                    <details class="confer">
+                        <summary>Conferir com dados reais </summary>
+                        <div class="fields">
+                            <div class="field">
+                                <label for="vturbViews">Visualizações (Vturb)</label>
+                                <span class="fbox">
+                                    <input id="vturbViews" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
+                                </span>
+                            </div>
+                            <div class="field">
+                                <label for="vturbPlays">Plays (Vturb)</label>
+                                <span class="fbox">
+                                    <input id="vturbPlays" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="checks">
+                            <li class="ok">
+                                <svg viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M3.5 8.5l3 3 6-7"></path>
+                                </svg>
+                                <span>
+                                    <span class="sr">Ok: </span>
+                                    Sem números absolutos da Vturb; play rate e conversão informados são usados como estão.
+                                </span>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div id="col-vsl" class="col s4">
+                <div class="col-head">
+                    <h3>VSL</h3>
+                    <span class="col-meta num">71 vendas · conversão 2,40%</span>
+                    <p class="src">Vturb · retenção é leitura, conversão entra na conta</p>
+                </div>
+                <div class="col-body">
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-conv">Conversão</label>
+                            <span class="lv-val">
+                                <input id="n-conv" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="2,40"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">vendas do front ÷ plays</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 19.871794871794872%, var(--ok) 19.871794871794872% 23.076923076923077%, var(--good) 23.076923076923077% 100%)" aria-hidden="true"></span>
+                            <span class="mk need" style="left:32.483215783381866%" aria-hidden="true"></span>
+                            <input type="range" min="0.2" max="8" step="0.05" aria-label="Conversão" aria-valuetext="2,40%, boa" value="2.4"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">boa</span>
+                            <span class="need-t">
+                                precisa <b class="num">2,73%</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-ret1">Retenção 1 min</label>
+                            <span class="lv-val">
+                                <input id="n-ret1" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="62"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">leitura, não entra na conta</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 50%, var(--ok) 50% 61.111111111111114%, var(--good) 61.111111111111114% 100%)" aria-hidden="true"></span>
+                            <input type="range" min="5" max="95" step="1" aria-label="Retenção 1 min" aria-valuetext="62%, boa" value="62"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">boa</span>
+                        </div>
+                    </div>
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-retPitch">Retenção até o pitch</label>
+                            <span class="lv-val">
+                                <input id="n-retPitch" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="31"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">leitura, não entra na conta</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 19.11764705882353%, var(--ok) 19.11764705882353% 41.17647058823529%, var(--good) 41.17647058823529% 100%)" aria-hidden="true"></span>
+                            <input type="range" min="2" max="70" step="1" aria-label="Retenção até o pitch" aria-valuetext="31%, boa" value="31"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">boa</span>
+                        </div>
+                    </div>
+                    <dl class="readouts num">
+                        <div>
+                            <dt>Conversão sobre o pitch</dt>
+                            <dd>
+                                7,7
+                                <!-- -->
+                                % <span class="band bom">boa</span>
+                            </dd>
+                        </div>
+                    </dl>
+                    <details class="confer">
+                        <summary>Conferir com dados reais </summary>
+                        <div class="fields">
+                            <div class="field">
+                                <label for="vendasReais">Vendas reais do front</label>
+                                <span class="fbox">
+                                    <input id="vendasReais" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="checks"></ul>
+                    </details>
+                </div>
+            </div>
+            <div id="col-oferta" class="col s5">
+                <div class="col-head">
+                    <h3>Oferta</h3>
+                    <span class="col-meta num">ticket R$ 398 · 1,34× o front</span>
+                    <p class="src">Plataforma · upsell não custa tráfego</p>
+                </div>
+                <div class="col-body">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="front">Preço do front</label>
+                            <span class="fbox">
+                                <span class="unit">R$</span>
+                                <input id="front" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="297"/>
+                            </span>
+                        </div>
+                        <div class="field">
+                            <label for="priceU1">Upsell 1</label>
+                            <span class="fbox">
+                                <span class="unit">R$</span>
+                                <input id="priceU1" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="397"/>
+                            </span>
+                        </div>
+                        <div class="field">
+                            <label for="priceU2">Upsell 2</label>
+                            <span class="fbox">
+                                <span class="unit">R$</span>
+                                <input id="priceU2" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="697"/>
+                            </span>
+                        </div>
+                        <div class="field">
+                            <label for="refund">Reembolso</label>
+                            <span class="fbox">
+                                <input id="refund" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="15,0"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-upsell1">Taxa upsell 1</label>
+                            <span class="lv-val">
+                                <input id="n-upsell1" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="15,5"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">% dos compradores do front</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 16.666666666666664%, var(--ok) 16.666666666666664% 23.333333333333332%, var(--good) 23.333333333333332% 100%)" aria-hidden="true"></span>
+                            <span class="mk need" style="left:49.039403626056306%" aria-hidden="true"></span>
+                            <input type="range" min="0" max="60" step="0.5" aria-label="Taxa upsell 1" aria-valuetext="15,5%, bom" value="15.5"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">bom</span>
+                            <span class="need-t">
+                                precisa <b class="num">29,4%</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lever">
+                        <div class="lv-top">
+                            <label for="n-upsell2">Taxa upsell 2</label>
+                            <span class="lv-val">
+                                <input id="n-upsell2" class="numin num" type="text" inputMode="decimal" autoComplete="off" value="5,6"/>
+                                <span class="unit">%</span>
+                            </span>
+                        </div>
+                        <small class="lv-sub">% dos compradores do front</small>
+                        <div class="rng">
+                            <span class="zones" style="background:linear-gradient(90deg, var(--bad) 0 7.5%, var(--ok) 7.5% 11.25%, var(--good) 11.25% 100%)" aria-hidden="true"></span>
+                            <span class="mk need" style="left:33.826707115231756%" aria-hidden="true"></span>
+                            <input type="range" min="0" max="40" step="0.5" aria-label="Taxa upsell 2" aria-valuetext="5,6%, bom" value="5.6"/>
+                        </div>
+                        <div class="lv-foot">
+                            <span class="band bom">bom</span>
+                            <span class="need-t">
+                                precisa <b class="num">13,5%</b>
+                            </span>
+                        </div>
+                    </div>
+                    <dl class="readouts num">
+                        <div>
+                            <dt>Ticket médio</dt>
+                            <dd>
+                                R$ 398
+                                <!-- -->
+                                <span class="band bom">bom</span>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>Receita extra por venda</dt>
+                            <dd>R$ 101</dd>
+                        </div>
+                        <div>
+                            <dt>Vendas upsell 1 · 2</dt>
+                            <dd>11 · 4</dd>
+                        </div>
+                    </dl>
+                    <details class="confer">
+                        <summary>Conferir com dados reais </summary>
+                        <div class="fields">
+                            <div class="field">
+                                <label for="faturamentoReal">Faturamento real</label>
+                                <span class="fbox">
+                                    <span class="unit">R$</span>
+                                    <input id="faturamentoReal" class="numin num" type="text" inputMode="decimal" autoComplete="off" placeholder="opcional" value=""/>
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="checks"></ul>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="bottom solo">
+            <div class="panel routes">
+                <h2>Rotas até o destino</h2>
+                <p class="hint">Cada alavanca sozinha, para ir de 1,40 a 1,6 (+13,9% em vendas ou ticket).</p>
+                <div class="tablewrap">
+                    <table class="num">
+                        <thead>
+                            <tr>
+                                <th>Alavanca</th>
+                                <th class="r">Hoje</th>
+                                <th class="r">Precisaria</th>
+                                <th>O que significa</th>
+                                <th>Viabilidade</th>
+                                <th>Esforço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td>
+                                    <button class="linklike">Play rate</button>
+                                </td>
+                                <td class="r" data-l="Hoje">52%</td>
+                                <td class="r" data-l="Precisaria">
+                                    <b>59,2%</b>
+                                </td>
+                                <td class="muted" data-l="O que significa">+7,2 pp</td>
+                                <td data-l="Viabilidade">
+                                    <span class="tag ok">dentro do teto</span>
+                                </td>
+                                <td class="muted" data-l="Esforço">fácil · página e capa</td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <button class="linklike">Upsell 1 (sozinho)</button>
+                                </td>
+                                <td class="r" data-l="Hoje">15,5%</td>
+                                <td class="r" data-l="Precisaria">
+                                    <b>29,4%</b>
+                                </td>
+                                <td class="muted" data-l="O que significa">ticket R$ 398 → R$ 453</td>
+                                <td data-l="Viabilidade">
+                                    <span class="tag ok">dentro do teto</span>
+                                </td>
+                                <td class="muted" data-l="Esforço">fácil · oferta, não custa tráfego</td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <button class="linklike">Upsell 2 (sozinho)</button>
+                                </td>
+                                <td class="r" data-l="Hoje">5,6%</td>
+                                <td class="r" data-l="Precisaria">
+                                    <b>13,5%</b>
+                                </td>
+                                <td class="muted" data-l="O que significa">ticket R$ 398 → R$ 453</td>
+                                <td data-l="Viabilidade">
+                                    <span class="tag ok">dentro do teto</span>
+                                </td>
+                                <td class="muted" data-l="Esforço">fácil · oferta, não custa tráfego</td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <button class="linklike">CTR de link</button>
+                                </td>
+                                <td class="r" data-l="Hoje">1,40%</td>
+                                <td class="r" data-l="Precisaria">
+                                    <b>1,59%</b>
+                                </td>
+                                <td class="muted" data-l="O que significa">+0,19 pp</td>
+                                <td data-l="Viabilidade">
+                                    <span class="tag ok">dentro do teto</span>
+                                </td>
+                                <td class="muted" data-l="Esforço">médio · criativos</td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <button class="linklike">Conversão do front</button>
+                                </td>
+                                <td class="r" data-l="Hoje">2,40%</td>
+                                <td class="r" data-l="Precisaria">
+                                    <b>2,73%</b>
+                                </td>
+                                <td class="muted" data-l="O que significa">+0,33 pp</td>
+                                <td data-l="Viabilidade">
+                                    <span class="tag ok">dentro do teto</span>
+                                </td>
+                                <td class="muted" data-l="Esforço">médio a difícil · VSL</td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <button class="linklike">CPM</button>
+                                </td>
+                                <td class="r" data-l="Hoje">R$ 45,00</td>
+                                <td class="r" data-l="Precisaria">
+                                    <b>R$ 39,51</b>
+                                </td>
+                                <td class="muted" data-l="O que significa">−R$ 5,49</td>
+                                <td data-l="Viabilidade">
+                                    <span class="tag ok">dentro do teto</span>
+                                </td>
+                                <td class="muted" data-l="Esforço">difícil · conta e segmentação</td>
+                            </tr>
+                            <tr class="dim">
+                                <td>
+                                    <button class="linklike">Connect rate</button>
+                                </td>
+                                <td class="r" data-l="Hoje">91%</td>
+                                <td class="r" data-l="Precisaria">
+                                    <b>103,7%</b>
+                                </td>
+                                <td class="muted" data-l="O que significa">+12,7 pp</td>
+                                <td data-l="Viabilidade">
+                                    <span class="tag imp">impossível sozinha</span>
+                                </td>
+                                <td class="muted" data-l="Esforço">fácil · técnico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="hint small">Tetos propostos: CTR <!-- -->5<!-- -->%, connect <!-- -->97<!-- -->%, play rate <!-- -->75<!-- -->%, conversão <!-- -->6<!-- -->%, upsell 1 <!-- -->35<!-- -->%, upsell 2 <!-- -->15<!-- -->%, CPM mínimo R$ <!-- -->20<!-- -->.</p>
+            </div>
+        </section>
+        <!--$-->
+        <!--/$-->
+        <script src="/_next/static/immutable/chunks/1kbt14nefgsiq.js" id="_R_" async=""></script>
+        <script>
+            (self.__next_f = self.__next_f || []).push([0])
+        </script>
+        <script>
+            self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"default\"]\n3:I[37457,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"default\"]\n4:I[93663,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\",\"/_next/static/immutable/chunks/2420qmnopx7wy.js\"],\"default\"]\n5:I[97367,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"OutletBoundary\"]\n6:\"$Sreact.suspense\"\n8:I[97367,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"ViewportBoundary\"]\na:I[97367,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"MetadataBoundary\"]\nc:I[68027,[\"/_next/static/immutable/chunks/2corl6wyj4669.js\"],\"default\",1]\n:HL[\"/_next/static/immutable/chunks/2s5bx2i-aavrd.css\",\"style\"]\n:HL[\"/_next/static/immutable/media/07454f8ad8aaac57-s.p.1d8-5gtibtj96.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n0:{\"P\":null,\"c\":[\"\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{},\"$undefined\",\"$undefined\",4608]},\"$undefined\",\"$undefined\",4624],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/immutable/chunks/2s5bx2i-aavrd.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/immutable/chunks/2corl6wyj4669.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"pt-BR\",\"className\":\"nunito_9f6871af-module__PQaO8a__variable\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L4\",null,{}],[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/immutable/chunks/2420qmnopx7wy.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$6\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@7\"}]}]]}],{},null,false,null]},null,false,null],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L8\",null,{\"children\":\"$L9\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$La\",null,{\"children\":[\"$\",\"$6\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Lb\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$c\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/immutable/chunks/2s5bx2i-aavrd.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]]],\"S\":true,\"h\":null,\"r\":\"$undefined\",\"s\":\"$undefined\",\"a\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"_RvxLtJi5NyJQxkZ0CGka\"}\n9:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n7:null\nb:[[\"$\",\"title\",\"0\",{\"children\":\"Simulador de funil VSL · Plugu\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Simule o funil VSL, veja o ROAS contra o portão e qual alavanca mexer primeiro.\"}]]\n"])
+        </script>
+    </body>
+</html>
